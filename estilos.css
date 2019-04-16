@@ -52,6 +52,16 @@ body {
   clear: both;
 }
 
+form{
+	width:100%;
+}
+input{
+	width:98%;
+}
+input[type=submit], input[type=reset]{
+	margin:5px;
+}
+
 /* Footer */
 .footer {
   padding: 20px;
@@ -61,9 +71,14 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
+@media screen and (max-width: 900px) {
+  .leftcolumn, .rightcolumn, form, input {   
     width: 100%;
     padding: 0;
   }
+@media screen and (max-width: 600px) {  
+	input{
+		width: 70%;
+	}
+
 }

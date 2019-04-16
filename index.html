@@ -46,7 +46,28 @@
     </div>
     <div class="card">
       <h3>Cadastre-se</h3>
-      <p>Formulário</p>
+      <form action="" method="post">
+        <!-- elementos de entrada do formulário-->
+        <ul style="list-style-type: nome;">
+            <label>Nome</label>
+            <input type="text" name="firsttname" size="30" maxlength="25" required/>
+            
+            <br><br>
+
+            <label>E-mail</label> 
+            <input type="email" name="e-mail" size="30" maxlength="25" required/>
+            
+            <br><br>
+
+            <label>Telefone</label>
+            <input type="phone" placeholder="00-00000-0000" name="telefone" required/>            
+           <br>
+                <p style="line-height: 2em; margin: 2em;">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpar" />
+                </p>
+        </ul>
+     </form>
     </div>
   </div>
 </div>
