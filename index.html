@@ -46,28 +46,13 @@
     </div>
     <div class="card">
       <h3>Cadastre-se</h3>
-      <form action="" method="post">
-        <!-- elementos de entrada do formulário-->
-        <ul style="list-style-type: nome;">
-            <label>Nome</label>
-            <input type="text" name="firsttname" size="30" maxlength="25" required/>
-            
-            <br><br>
-
-            <label>E-mail</label> 
-            <input type="email" name="e-mail" size="30" maxlength="25" required/>
-            
-            <br><br>
-
-            <label>Telefone</label>
-            <input type="phone" placeholder="00-00000-0000" name="telefone" required/>            
-           <br>
-                <p style="line-height: 2em; margin: 2em;">
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Limpar" />
-                </p>
-        </ul>
-     </form>
+            <form action="form_contato.php" method="post" >
+              <!-- elementos de entrada do formulário-->
+            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
+            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
+            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
+            <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
+        </form>
     </div>
   </div>
 </div>
