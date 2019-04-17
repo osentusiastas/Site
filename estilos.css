@@ -2,19 +2,45 @@
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
+/* Adição do fundo cinza claro ao body*/
 body {
-  font-family: Arial;
-  padding: 20px;
+  font-family: Arial; 
   background: #f1f1f1;
 }
 
+h5{
+	font-size:1rem;
+}
+
 /* Header/Blog Title */
-.header {
+#header {
   padding: 30px;
   font-size: 40px;
   text-align: center;
-  background: white;
+  background: #2a3143;
+  position:fixed;
+  top:0;  
+}
+
+.logo{
+	float:left;
+	padding-left:2%;
+}
+
+ul{
+	list-style-type:none;
+	float:right;
+	padding-right:2%;
+	}
+
+a:link{
+	text-decoration:none;
+	font-size:1.5rem;
+	color:#45bcc2;
+}
+
+a:hover{
+	color:white;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -34,8 +60,23 @@ body {
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+  width: 100%;  
+}
+
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	 width: 100%;
+	 height:200px;
+  background-image: url('images/banner_principal_900px.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+
+.container{
+	margin-top:8%;
+	z-index:-1;
 }
 
 /* Add a card effect for articles */
@@ -43,6 +84,7 @@ body {
    background-color: white;
    padding: 20px;
    margin-top: 20px;
+   box-shadow: -5px 8px 15px grey;
 }
 
 /* Clear floats after the columns */
@@ -61,31 +103,95 @@ input{
 input[type=submit], input[type=reset]{
 	margin:5px;
 }
-/*Agradecimento*/
-.agradecimento{
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
 
 /* Footer */
-.footer {
-  padding: 20px;
+#footer {
+  padding: 30px;
+  font-size: 40px;
   text-align: center;
-  background: #ddd;
   margin-top: 20px;
+  background:#ddd;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 900px) {
-  .leftcolumn, .rightcolumn, form, input {   
-    width: 100%;
-    padding: 0;
+/* Ajuste das margens entre o topo e o bloco de conteúdo, para que o topo não o sobreponha */
+@media screen and (max-width: 500px) {
+  .container{   
+    margin-top:30%;
   }
-@media screen and (max-width: 600px) {  
-	input{
-		width: 70%;
-	}
+  
+  .flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height:200px;
+	background-image: url('images/banner_principal_500px.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+  }
+  
+  .fakeimg{
+  background-image:url('images/banner_principal_500px.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
 
+  }
+}
+@media screen and (max-width: 699px) and (min-width: 501px) {  
+	.container{   
+		margin-top:25%;
+  }
+  
+  .flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height:200px;
+	background-image: url('images/banner_principal_699px.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+  
+  .fakeimg{
+  background-image:url('images/banner_principal_699px.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 700px) {  
+	.container{   
+		margin-top:18%;
+  }  
+  
+   .flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height:385px;
+	background-image: url('images/banner_principal_900px.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+  }
+  
+  .fakeimg{
+  background-image:url('images/banner_principal_900px.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  }
+}
+
+@media screen and (min-width: 901px) {  
+	.container{   
+		margin-top:15%;
+  }  
+  
+    .flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height:385px;
+	background-image: url('images/banner_principal_1000px.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+  }
 }
