@@ -2,14 +2,32 @@
   box-sizing: border-box;
 }
 
+@font-face{
+	font-family:Microsoft PhagsPa;
+	src: local('phagspa.ttf'), url('font/phagspa.ttf');
+}
+
 /* Adição do fundo cinza claro ao body*/
 body {
   font-family: Arial; 
   background: #f1f1f1;
 }
 
+h2{
+	font-family:'Khand', sans-serif;
+	font-weight:bold;
+	color:#2a3143;
+}
+
 h5{
 	font-size:1rem;
+	font-family:'Poppins', sans-serif;
+}
+
+p{
+	font-family:'Microsoft PhagsPa', sans-serif;
+	color:#2a3143;
+	font-size:1.2rem;
 }
 
 /* Header/Blog Title */
@@ -94,14 +112,11 @@ a:hover{
   clear: both;
 }
 
-form{
-	width:100%;
-}
-input{
-	width:98%;
-}
-input[type=submit], input[type=reset]{
-	margin:5px;
+.form{
+	display:none;
+	width:50%;
+	height:auto;
+	float:right;
 }
 
 /* Footer */
@@ -111,6 +126,10 @@ input[type=submit], input[type=reset]{
   text-align: center;
   margin-top: 20px;
   background:#ddd;
+}
+
+.logo-rodape{
+	margin:auto;
 }
 
 /* Ajuste das margens entre o topo e o bloco de conteúdo, para que o topo não o sobreponha */
