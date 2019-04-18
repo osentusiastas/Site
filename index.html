@@ -1,4 +1,4 @@
-git<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title>InovaSkills Blog</title>
@@ -7,48 +7,66 @@ git<!DOCTYPE html>
   <meta name="description" content="">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Khand|Poppins:300,400|Teko:400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="estilos.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138495776-1"></script>
+  <!-- Hotjar Tracking Code for http://www.inovaskills.com.br/ -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-138495776-1');
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1286134,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 </head>
-<body>   
+<body>
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-md" id="header">
 		<div class="logo">
-			<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
+		  <a href="index.html"><img src="images/inovaskills_logo.png" alt="Logo InovaSkills"></a>
 		</div>
 		<ul>
 			<li>
-				<a href="#">Cadastre-se</a>
+				<a href="#" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;">CADASTRE-SE</a>
 			</li>
 		</ul>
 	</div>
   </div>
 </div>
-  
+
+<div class="form" id="formulario">
+	<div class="card">
+        <h3>Cadastre-se</h3>
+		<div style="float:right; padding-right:1%;">
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
+		</div>
+        <form action="" method="post" >
+            <!-- elementos de entrada do formulário-->
+            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
+            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
+            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
+            <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
+        </form>
+    </div>
+</div>
+
 <div class="container col-md-10">
 	<div class="row">
 		   <div class="col-md-12">
 				<div class="card" style="padding:0;">
 				  <div class="flex-container">
 				  </div>
-				  <p>Conteúdo..</p>
 				  <div class="card-footer">
-					<ul class="midias-sociais">
-							<li>
-							<i class="fab fa-instagram"></i><p style="font-size:1rem;">INSTAGRAM</p>
+					<ul class="bloco-midias-sociais">
+							<li class="midias-sociais">
+							<a href="www.google.com.br" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-instagram"></i>&nbsp; INSTAGRAM</a>							
 							</li>
-							<li>
-							<i class="fab fa-facebook"></i><p style="font-size:1rem;">FACEBOOK</p>
+							<li class="midias-sociais">
+							<a href="" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-facebook"></i>&nbsp; FACEBOOK</a>
 							</li>
 					</ul>
 				  </div>
@@ -56,51 +74,74 @@ git<!DOCTYPE html>
 			</div>
 	</div>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>Título do Artigo</h2>
-      <h5>Descrição do Título, 15 de Abril de 2019</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Texto</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
-	  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-    <div class="card">
-      <h2>Título do Artigo</h2>
-      <h5>Descrição do Título, 15 de Abril de 2019</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Texto</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>Sobre Nós</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Texto</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Imagem</div><br>
-      <div class="fakeimg">Imagem</div><br>
-      <div class="fakeimg">Imagem</div>
-    </div>
-    <div class="card">
-      <h3>Cadastre-se</h3>
-            <form action="form_contato.php" method="post" >
-              <!-- elementos de entrada do formulário-->
-            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
-            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
-            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
-            <p>Prometemos não usar o seu email para enviar qualquer tipo de Spam.</p>
-        </form>
-    </div>
-  </div>
+	<div class="row">
+	   <div class="col-md-7">
+			<div class="card">
+			  <h2>Omnichannel: Inovação e Sucesso no E-Commerce</h2>
+			  <h5>17 de Abril de 2019</h5>
+			  <a href="omnichannel-inovacao-no-ecommerce.html" target="_blank" class="card-link"><div class="fakeimg" style="height:200px;">Image</div></a>
+			  <p>Atualmente, o Alibaba é uma das maiores empresas...</p>
+			</div>
+		</div>
+	<div class="col-md-5">
+		<div class="card" >
+			  <h2>Título</h2>
+			  <h5>15 de Abril de 2019</h5>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Conteúdo..</p>
+			</div>
+		</div>
+	</div>
+		
+	<div class="row">
+	   <div class="col-md-5">
+			<div class="card">
+			  <h2>Título</h2>
+			  <h5>15 de Abril de 2019</h5>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Conteúdo..</p>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="card" >
+			  <h2>Título</h2>
+			  <h5>15 de Abril de 2019</h5>
+			  <div class="fakeimg" style="height:200px;">Image</div>
+			  <p>Conteúdo..</p>
+			</div>
+		</div>
+	</div>  
 </div>
+  
+<div class="container-fluid" id="footer" style="height:auto;>
+	<div class="container col-md-10" style="z-index:1; height:50px;">
+	  <div class="row" id="linha-rodape">					
+			  <div class="logo-rodape">
+				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
+				<p style="text-align:left;">&copy; 2019 Todos os direitos reservados.</p>
+			  </div> 		
+	  </div>
+	 </div>
 
+<script>
+function abrirForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
-
+function fecharForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
