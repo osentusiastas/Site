@@ -9,13 +9,23 @@
 
 /* Adição do fundo cinza claro ao body*/
 body {
-  font-family: Arial; 
   background: #f1f1f1;
 }
 
 h2{
 	font-family:'Khand', sans-serif;
 	font-weight:bold;
+	color:#2a3143;
+}
+
+h3{
+	font-family:'Poppins', sans-serif;
+	color::#2a3143;
+}
+
+/* Subtítulo para os textos dos artigos */
+h4.subtitulo{
+	font-family:'Khand', sans-serif;
 	color:#2a3143;
 }
 
@@ -32,17 +42,23 @@ p{
 
 /* Header/Blog Title */
 #header {
-  padding: 30px;
   font-size: 40px;
   text-align: center;
   background: #2a3143;
   position:fixed;
-  top:0;  
+  top:0;
+  z-index:2;
 }
 
 .logo{
 	float:left;
 	padding-left:2%;
+}
+
+/*Código para ajustar o rodapé do card principal*/
+.card-footer{
+	padding:.45rem 0;
+	
 }
 
 ul{
@@ -51,7 +67,23 @@ ul{
 	padding-right:2%;
 	}
 
-a:link{
+ul.bloco-midias-sociais{
+	float:left;
+	padding:0;
+	margin:0;
+	width:100%;
+}
+/*Links final do artigo */
+ul.links-fim-artigo{
+	float:left;
+}
+
+.midias-sociais{
+	padding-left:2%;
+	display: inline-block;	
+}
+
+#bt-cadastro:link{
 	text-decoration:none;
 	font-size:1.5rem;
 	color:#45bcc2;
@@ -59,6 +91,16 @@ a:link{
 
 a:hover{
 	color:white;
+}
+
+#bt-cadastro2:link{
+	text-decoration:none;
+	font-size:1.5rem;
+	color:#45bcc2;
+}
+
+#bt-cadastro2:hover{
+	color:#2a3143;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -88,13 +130,12 @@ a:hover{
 	 height:200px;
   background-image: url('images/banner_principal_900px.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
- 
+  background-size: contain; 
 }
 
 .container{
 	margin-top:8%;
-	z-index:-1;
+	z-index:1;
 }
 
 /* Add a card effect for articles */
@@ -103,6 +144,11 @@ a:hover{
    padding: 20px;
    margin-top: 20px;
    box-shadow: -5px 8px 15px grey;
+   z-index:2;
+}
+
+.row{
+	z-index:1;
 }
 
 /* Clear floats after the columns */
@@ -135,7 +181,7 @@ a:hover{
 /* Ajuste das margens entre o topo e o bloco de conteúdo, para que o topo não o sobreponha */
 @media screen and (max-width: 500px) {
   .container{   
-    margin-top:30%;
+    margin-top:15%;
   }
   
   .flex-container{
@@ -157,7 +203,7 @@ a:hover{
 }
 @media screen and (max-width: 699px) and (min-width: 501px) {  
 	.container{   
-		margin-top:25%;
+		margin-top:12%;
   }
   
   .flex-container{
@@ -179,7 +225,7 @@ a:hover{
 
 @media screen and (max-width: 900px) and (min-width: 700px) {  
 	.container{   
-		margin-top:18%;
+		margin-top:10%;
   }  
   
    .flex-container{
@@ -201,16 +247,16 @@ a:hover{
 
 @media screen and (min-width: 901px) {  
 	.container{   
-		margin-top:15%;
+		margin-top:8%;
   }  
   
     .flex-container{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	height:385px;
-	background-image: url('images/banner_principal_1000px.jpg');
+	background-image: url('images/banner_principal_2540px.jpg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-color:#33cccc;
   }
 }
