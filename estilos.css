@@ -57,8 +57,7 @@ p{
 
 /*Código para ajustar o rodapé do card principal*/
 .card-footer{
-	padding:.45rem 0;
-	
+	padding:.45rem 0;	
 }
 
 ul{
@@ -83,14 +82,20 @@ ul.links-fim-artigo{
 	display: inline-block;	
 }
 
+a:hover{
+	text-decoration:none;
+    color:#2a3143;
+}
+
 #bt-cadastro:link{
 	text-decoration:none;
 	font-size:1.5rem;
 	color:#45bcc2;
 }
 
-a:hover{
+#cadastroTopo:hover{
 	color:white;
+	text-decoration:none;
 }
 
 #bt-cadastro2:link{
@@ -119,8 +124,11 @@ a:hover{
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color:#aaa;
   width: 100%;  
+  background-image:url('image/artigo1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .flex-container{
@@ -152,7 +160,7 @@ a:hover{
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row:after{
   content: "";
   display: table;
   clear: both;
@@ -198,9 +206,9 @@ a:hover{
   background-image:url('images/banner_principal_500px.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-
   }
 }
+
 @media screen and (max-width: 699px) and (min-width: 501px) {  
 	.container{   
 		margin-top:12%;
