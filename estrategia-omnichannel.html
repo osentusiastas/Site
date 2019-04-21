@@ -45,10 +45,11 @@
 		<div style="float:right; padding-right:1%;">
 		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
 		</div>
-        <form action="" method="post" >
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm">
             <!-- elementos de entrada do formulário-->
-            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
-            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
+            <input id="nome" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
+            <input id="email" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
             <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
             <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
         </form>
@@ -77,13 +78,14 @@
 	<div class="card" style="width:50%; margin:auto; top:25%;"> <!-- Estilo para posicionar o card com o formulário Ver Mais -->
         <h4>Cadastre-se!</h4>
 		<div style="float:right; padding-right:1%;">
-		<a href="" style="color:red; font-size:1rem;">Fechar</a>
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
 		</div>
-        <form action="" method="post" >
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm2">
             <!-- elementos de entrada do formulário-->
-            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
-            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
-            <input type="submit" class="form-control btn-info" value="Quero fazer parte!" onclick="return showDiv();"><br>     <!-- Código para abrir o conteúdo oculto -->   
+            <input id="nome2" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
+            <input id="email2" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
+            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>     
             <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
         </form>
     </div>
@@ -125,6 +127,10 @@
 	  </div>
 </div>
 
+<!-- Conexão com o Firebase --> 
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="conexaoFirebase.js"></script>
+
 <script>
 function abrirForm() {
   var x = document.getElementById("formulario");
@@ -162,13 +168,6 @@ function fecharFormVerMais() {
   } else {
     x.style.display = "block";
   }
-}
-
-/* Código para mostrar div oculta de conteúdo após submeter o formulário */
-function showDiv() {
-    document.getElementById('divConteudoOculto').style.display ='block';
-	document.getElementById('formularioVerMais').style.display ='none';
-    return false;
 }
 
 </script>

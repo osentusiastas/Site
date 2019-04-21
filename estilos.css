@@ -173,6 +173,17 @@ a:hover{
 	float:right;
 }
 
+.alerta{
+	text-align:center;
+	padding:10px;
+	background:#0099cc;
+	color:#fff;
+	width:100%;
+	margin-bottom:10px;
+	display:none;
+	border-radius:25px;
+}
+
 /* Footer */
 #footer {
   padding: 30px;
