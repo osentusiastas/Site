@@ -60,21 +60,21 @@
             <input id="email" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
 						<label>Você realiza compras através da internet?</label>
             <div class="radio">
-                <label><input type="radio" name="optradio" required>sim</label>
+                <label><input id="optradio" type="radio" name="optradio" required>sim</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="optradio" required>não</label>
+                <label><input id="optradio" type="radio" name="optradio" required>não</label>
               </div>
             
             <label>Qual segmento de trabalho você atua?</label>
             <div class="form-group">
-                <select name="segmento">
+                <select id="segmento" name="segmento">
                 <option value="0"></option>
-                <option value="1">Indústria de bens duráveis</option>
-                <option value="2">Indústria de bens não duráveis</option>
-                <option value="3">Varejo</option>
-                <option value="4">Serviços</option>
-                <option value="5">Outros segmentos</option>
+                <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+                <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Outros segmentos">Outros segmentos</option>
             </select>
             </div>
 						<input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
@@ -158,7 +158,7 @@
 	 
 <!-- Conexão com o Firebase --> 
 <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-<script src="conexaoFirebase.js"></script>
+<script src="js/conexaoFirebase.js"></script>
 
 <script>
 function abrirForm() {
