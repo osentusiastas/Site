@@ -20,13 +20,13 @@ h2{
 
 h3{
 	font-family:'Poppins', sans-serif;
-	color::#2a3143;
+	color:#2a3143;
 }
 
 /* Subtítulo para os textos dos artigos */
 h4.subtitulo{
 	font-family:'Khand', sans-serif;
-	color:#2a3143;
+	color: slateblue;
 }
 
 h5{
@@ -38,6 +38,12 @@ p{
 	font-family:'Microsoft PhagsPa', sans-serif;
 	color:#2a3143;
 	font-size:1.2rem;
+}
+
+#p_itens{
+font-family:'Microsoft PhagsPa', sans-serif;
+color: seagreen;
+font-size:1.2rem;
 }
 
 /* Header/Blog Title */
