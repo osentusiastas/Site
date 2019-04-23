@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Estratégia Omnichannel - Inova skills</title>
+<title>Omnichannel: Estratégias para Melhorar as Vendas do seu e-commerce - InovaSkills Blog</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="Estratégia Omnichannel">
@@ -32,7 +32,7 @@
 		</div>
 		<ul>
 			<li>
-				<a href="#formulario" onclick="abrirForm()" id="bt-cadastro">Cadastre-se</a>
+				<a href="#formulario" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;" id="cadastroTopo">CADASTRE-SE</a>
 			</li>
 		</ul>
 	</div>
@@ -45,10 +45,11 @@
 		<div style="float:right; padding-right:1%;">
 		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
 		</div>
-        <form action="" method="post" >
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm">
             <!-- elementos de entrada do formulário-->
-            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
-            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
+            <input id="nome" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
+            <input id="email" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
             <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
             <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
         </form>
@@ -59,37 +60,39 @@
 <div class="container col-md-10">
 	<div class="row">
 		   <article class="col-md-12">
-				<h2 style="text-align:center;">Omnichannel: Como interpretar a sinergia entre o mundo físico e virtual e melhorar os resultados de vendas do seu e-commerce.</h2>
+				<h2 style="text-align:center;">Omnichannel: Descubra como Essa Estratégia Pode Melhorar Os Resultados de Vendas do Seu E-Commerce</h2>
 				
 				<h4 class="subtitulo" style="text-align:center;">Aprenda como os maiores e-commerces do mundo interpretam (e reagem) a nova experiência de compra proporcionada pela transformação digital.</h4>
-				<div class="fakeimg" style="height:200px;">Image</div>
-			   <p>
+				<div class="fakeimg" style="width:70%; margin:auto;"><img src="images/artigo1.jpg" alt="Estratégia Omnichannel" width="100%"></div>
+			   <p style="margin-top:1%;">
 			   As pessoas não buscam mais apenas um produto na loja, compram e vão embora, ou visitam a página de e-commerce, realizam uma compra e aguardam a entrega do item em casa. A tendência é a busca por conveniência e novas formas de interação com as lojas. Logo, todo esse impacto positivo de um lado (E-commerce), traz um impacto negativo de outro (Loja física), que por hora já causou grandes danos ao mercado tradicional. Por isso, o Omnichannel é peça fundamental para todo varejo que queira se manter em um mundo conectado.
 			   </p>
 			   <p>A estratégia Omnichannel se baseia no uso simultâneo e interligado de diferentes canais de comunicação, com o objetivo de estreitar a relação entre cliente e fornecedor, online e offline. Ou seja, proporcionar uma experiência única e exclusiva para cada cliente, pois o mesmo cliente pode estar em outras várias plataformas, ou até em loja física a procura do produto ou serviço que deseja.</p>
+			   <h4 class="subtitulo">Como funciona?</h4>
 			  
-			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Cadastre-se para ler mais!</a>  
+			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Ver Mais</a>  
 			  
 			  <!-- Formulário do "Ver Mais" -->
 
 <div class="form" id="formularioVerMais" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
 	<div class="card" style="width:50%; margin:auto; top:25%;"> <!-- Estilo para posicionar o card com o formulário Ver Mais -->
-        <h4>Cadastre-se para mais conteúdos!</h4>
+        <h4>Cadastre-se!</h4>
 		<div style="float:right; padding-right:1%;">
-		<a href="" style="color:red; font-size:1rem;">Fechar</a>
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
 		</div>
-        <form action="" method="post" >
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm2">
             <!-- elementos de entrada do formulário-->
-            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
-            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
-            <input type="submit" class="form-control btn-info" value="Quero fazer parte!" onclick="return showDiv();"><br>     <!-- Código para abrir o conteúdo oculto -->   
+            <input id="nome2" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
+            <input id="email2" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
+            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>     
             <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
         </form>
     </div>
 </div>				
 	
 	<div style="display:none;" id="divConteudoOculto">  
-				  <h4 class="subtitulo">Como funciona?</h4>
+				  
 				   <p>
 					Na estratégia  Omnichannel, a venda é possível em mais de um canal (online, físico, bot, e-commerce, etc) e existem diversas formas de contato para o cliente, só que de maneira integrada. E, principalmente, o banco de dados integrado, permitindo trocar e transitar informações entre canais diferentes sem comprometer a experiência do consumidor. Traduzindo em poucas palavras: Omnichannel é uma comunicação única; definindo padrões e regras de atendimento para o cliente de forma única. Isso permite, por exemplo, não ter preços diferentes nas lojas ou políticas de trocas diferentes - divergências muito comuns no varejo, que geram muito atrito. 
 				   </p>
@@ -123,6 +126,10 @@
 			  </div> 		
 	  </div>
 </div>
+
+<!-- Conexão com o Firebase --> 
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="conexaoFirebase.js"></script>
 
 <script>
 function abrirForm() {
@@ -161,13 +168,6 @@ function fecharFormVerMais() {
   } else {
     x.style.display = "block";
   }
-}
-
-/* Código para mostrar div oculta de conteúdo após submeter o formulário */
-function showDiv() {
-    document.getElementById('divConteudoOculto').style.display ='block';
-	document.getElementById('formularioVerMais').style.display ='none';
-    return false;
 }
 
 </script>

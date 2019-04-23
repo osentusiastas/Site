@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>InovaSkills Blog</title>
+<link rel="icon" href="favicon.ico">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -39,7 +40,7 @@
 		</div>
 		<ul>
 			<li>
-				<a href="#" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;">CADASTRE-SE</a>
+				<a href="#" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;" id="cadastroTopo">CADASTRE-SE</a>
 			</li>
 		</ul>
 	</div>
@@ -52,12 +53,32 @@
 		<div style="float:right; padding-right:1%;">
 		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
 		</div>
-        <form action="" method="post" >
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm">
             <!-- elementos de entrada do formulário-->
-            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
-            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
-            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
-            <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
+            <input id="nome" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
+            <input id="email" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
+						<label>Você realiza compras através da internet?</label>
+            <div class="radio">
+                <label><input id="optradio" type="radio" name="optradio" required>sim</label>
+              </div>
+              <div class="radio">
+                <label><input id="optradio" type="radio" name="optradio" required>não</label>
+              </div>
+            
+            <label>Qual segmento de trabalho você atua?</label>
+            <div class="form-group">
+                <select id="segmento" name="segmento">
+                <option value="0"></option>
+                <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+                <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Outros segmentos">Outros segmentos</option>
+            </select>
+            </div>
+						<input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
+					  <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
         </form>
     </div>
 </div>
@@ -84,38 +105,44 @@
 
 	<div class="row">
 	   <div class="col-md-7">
+	   <a href="estrategia-omnichannel.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card">
-			  <h2>Omnichannel: Como interpretar a sinergia entre o mundo físico e virtual e melhorar os resultados de vendas do seu e-commerce.</h2>
+			  <h2>Omnichannel: Descubra como Essa Estratégia Pode Melhorar Os Resultados de Vendas do Seu E-Commerce</h2>
 			  <h5>17 de Abril de 2019</h5>
-			  <a href="estrategia-omnichannel.html" target="_blank" class="card-link"><div class="fakeimg" style="height:200px;">Image</div></a>
-			  <p>Atualmente, o Alibaba é uma das maiores empresas...</p>
+			  <div class="fakeimg" style="height:200px; margin-bottom:10%;"><img src="images/artigo1.jpg" alt="Estratégias Onmichannel" width="100%"></div>
+				<p>Na estratégia  Omnichannel, a venda é possível...</p>
 			</div>
+		</a>
 		</div>
 	<div class="col-md-5">
-		<div class="card" >
-			  <h2>Título</h2>
-			  <h5>15 de Abril de 2019</h5>
-			  <div class="fakeimg" style="height:200px;">Image</div>
-			  <p>Conteúdo..</p>
+		<a href="transformacao-digital.html" target="_blank" class="card-link" style="color:#2a3143;">
+			<div class="card" >
+				  <h2>Transformação Digital: Entenda o futuro das empresas.</h2>
+				  <h5>15 de Abril de 2019</h5>
+					<div style="height:175px; margin-bottom:2%;"><img src="images/transformacao_ digital.jpg" alt="Transformação Digital" width="100%"></div>
+					<p>Estamos passando por uma transformação digital!</p>
+				</div>
 			</div>
-		</div>
+		</a>
 	</div>
 		
 	<div class="row">
 	   <div class="col-md-5">
+				<a href="passos-importantes-para-a-transformacao-digital.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card">
-			  <h2>Título</h2>
-			  <h5>15 de Abril de 2019</h5>
-			  <div class="fakeimg" style="height:200px;">Image</div>
-			  <p>Conteúdo..</p>
+			  <h2>Passos Importantes para a Transformação Digital da sua Empresa</h2>
+			  <h5>22 de Abril de 2019</h5>
+			  <div class="fakeimg" style="height:200px;"><img src="images/artigo3.jpg" alt="Passos Importantes para a Transformação Digital da sua Empresa" width="100%"></div>
+			  <p>Passos importantes para a transformação...</p>
 			</div>
 		</div>
 		<div class="col-md-7">
+				<a href="como-se-destacar-no-mundo-digital.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card" >
-			  <h2>Título</h2>
-			  <h5>15 de Abril de 2019</h5>
-			  <div class="fakeimg" style="height:200px;">Image</div>
-			  <p>Conteúdo..</p>
+			  <h2>Como se Destacar no Mundo Digital - Saiba as Principais Competências</h2>
+			  <h5>22 de Abril de 2019</h5>
+			  <div class="fakeimg" style="height:200px;"><img src="images/artigo4.jpg" alt="Como se Destacar no Mundo Digital" width="100%"></div>
+			  <p>Como se Destacar no Mundo Digital..</p>
 			</div>
 		</div>
 	</div>  
@@ -130,6 +157,10 @@
 			  </div> 		
 	  </div>
 	 </div>
+	 
+<!-- Conexão com o Firebase --> 
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="js/conexaoFirebase.js"></script>
 
 <script>
 function abrirForm() {
