@@ -20,6 +20,38 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	
+	window.onload = function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    };
+    function DisplayIP(response) {
+	
+	var a = new Date();
+    var ano = a.getFullYear();
+	
+	var m = new Date();
+    var mes = m.getMonth();
+	
+	var d = new Date();
+    var dia = d.getDate();
+	
+	var h = new Date();
+    var hora = h.getHours();
+	
+	var min = new Date();
+    var minutos = min.getMinutes();
+	
+	var s = new Date();
+    var segundos = s.getSeconds();
+	
+    var ip = response.ip + "," + ano + "-" + mes + "-" + dia + " " + hora + ":" + minutos + ":" + segundos; 
+	
+	document.getElementById('ipaddress').value = ip;
+
+    }
 </script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138495776-1"></script>
@@ -48,17 +80,17 @@
 </div>
 
 <div class="form" id="formulario" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
-	<div class="card" style="width:50%; margin:auto; top:25%;"> <!-- Estilo para posicionar o card com o formulário -->
-        <h3>Cadastre-se</h3>
-		<div style="float:right; padding-right:1%;">
-		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
+	<div class="card formulario"> 
+		<div style="float:right;padding-left:90%;">
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
 		</div>
+		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%;">Nós não te enviaremos e-mails, não se preocupe!</h4>		
 		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
         <form action="" method="post" id="contactForm">
             <!-- elementos de entrada do formulário-->
-            <input id="nome" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
-            <input id="email" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
-						<label>Você realiza compras através da internet?</label>
+            <input id="nome" type="text" class="form-control" name="nome" placeholder="Qual o seu nome?" required><br>
+            				<label>Você realiza compras online?</label>
             <div class="radio">
                 <label><input id="optradio" type="radio" name="optradio" required>sim</label>
               </div>
@@ -66,6 +98,7 @@
                 <label><input id="optradio" type="radio" name="optradio" required>não</label>
               </div>
             
+			<!--  
             <label>Qual segmento de trabalho você atua?</label>
             <div class="form-group">
                 <select id="segmento" name="segmento">
@@ -76,9 +109,11 @@
                 <option value="Serviços">Serviços</option>
                 <option value="Outros segmentos">Outros segmentos</option>
             </select>
-            </div>
+            </div>  -->   
+			              	<input id="ipaddress" style="display:none;"></input>
+			             <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br>
 						<input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
-					  <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
+					 
         </form>
     </div>
 </div>
@@ -89,16 +124,6 @@
 				<div class="card" style="padding:0;">
 				  <div class="flex-container">
 				  </div>
-				  <div class="card-footer">
-					<ul class="bloco-midias-sociais">
-							<li class="midias-sociais">
-							<a href="https://www.instagram.com/inovaskills/" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-instagram"></i>&nbsp; INSTAGRAM</a>							
-							</li>
-							<li class="midias-sociais">
-							<a href="" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-facebook"></i>&nbsp; FACEBOOK</a>
-							</li>
-					</ul>
-				  </div>
 				</div>
 			</div>
 	</div>
@@ -107,21 +132,19 @@
 	   <div class="col-md-7">
 	   <a href="estrategia-omnichannel.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card">
-			  <h2>Omnichannel: Descubra como Essa Estratégia Pode Melhorar Os Resultados de Vendas do Seu E-Commerce</h2>
+			  <h2>Omnichannel: Descubra Como Essa Estratégia Pode Melhorar Os Resultados De Vendas Do Seu E-Commerce</h2>
 			  <h5>17 de Abril de 2019</h5>
-			  <div class="fakeimg" style="height:200px; margin-bottom:10%;"><img src="images/artigo1.jpg" alt="Estratégias Onmichannel" width="100%"></div>
-				<p>Na estratégia  Omnichannel, a venda é possível...</p>
+			  <div class="img"><img src="images/artigo1.jpg" alt="Estratégias Onmichannel" width="100%"></div>
 			</div>
 		</a>
 		</div>
 	<div class="col-md-5">
 		<a href="transformacao-digital.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card" >
-				  <h2>Transformação Digital: Entenda o futuro das empresas.</h2>
+				  <h2>Transformação Digital: Entenda O Futuro Das Empresas.</h2>
 				  <h5>15 de Abril de 2019</h5>
-					<div style="height:175px; margin-bottom:2%;"><img src="images/transformacao_ digital.jpg" alt="Transformação Digital" width="100%"></div>
-					<p>Estamos passando por uma transformação digital!</p>
-				</div>
+					<div class="img"><img src="images/transformacao_ digital.jpg" alt="Transformação Digital" width="100%"></div>
+			</div>
 			</div>
 		</a>
 	</div>
@@ -130,19 +153,17 @@
 	   <div class="col-md-5">
 				<a href="passos-importantes-para-a-transformacao-digital.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card">
-			  <h2>Passos Importantes para a Transformação Digital da sua Empresa</h2>
+			  <h2>Passos Importantes Para A Transformação Digital Da Sua Empresa</h2>
 			  <h5>22 de Abril de 2019</h5>
-			  <div class="fakeimg" style="height:200px;"><img src="images/artigo3.jpg" alt="Passos Importantes para a Transformação Digital da sua Empresa" width="100%"></div>
-			  <p>Passos importantes para a transformação...</p>
+			  <div class="img"><img src="images/artigo3.jpg" alt="Passos Importantes para a Transformação Digital da sua Empresa" width="100%"></div>
 			</div>
 		</div>
 		<div class="col-md-7">
 				<a href="como-se-destacar-no-mundo-digital.html" target="_blank" class="card-link" style="color:#2a3143;">
 			<div class="card" >
-			  <h2>Como se Destacar no Mundo Digital - Saiba as Principais Competências</h2>
+			  <h2>Como Se Destacar No Mundo Digital - Saiba As Principais Competências</h2>
 			  <h5>22 de Abril de 2019</h5>
-			  <div class="fakeimg" style="height:200px;"><img src="images/artigo4.jpg" alt="Como se Destacar no Mundo Digital" width="100%"></div>
-			  <p>Como se Destacar no Mundo Digital..</p>
+			  <div class="img"><img src="images/artigo4.jpg" alt="Como se Destacar no Mundo Digital" width="70%"></div>
 			</div>
 		</div>
 	</div>  

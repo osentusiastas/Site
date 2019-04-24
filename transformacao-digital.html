@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Transformação Digital - Entenda o Futuro das Empresas Através da Web.</title>
-<link rel="icon" href="favicon.ico">
+<title>Transformação Digital - InovaSkills Blog</title>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="Transformação Digital">
-  <meta name="description" content="A transformação digital tem determinado o sucesso das empresas através da
-	internet. Confira como a inovação e tecnologia podem atuar a favor da sua empresa.">
+  <meta name="description" content="A transformação digital tem determinado o sucesso das empresas através da internet. Confira como a inovação e tecnologia podem atuar a favor da sua empresa.">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Khand|Poppins:300,400|Teko:400,700" rel="stylesheet">
@@ -22,6 +20,40 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	
+		window.onload = function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    };
+    function DisplayIP(response) {
+	
+	var a = new Date();
+    var ano = a.getFullYear();
+	
+	var m = new Date();
+    var mes = m.getMonth();
+	
+	var d = new Date();
+    var dia = d.getDate();
+	
+	var h = new Date();
+    var hora = h.getHours();
+	
+	var min = new Date();
+    var minutos = min.getMinutes();
+	
+	var s = new Date();
+    var segundos = s.getSeconds();
+	
+    var ip = response.ip + "," + ano + "-" + mes + "-" + dia + " " + hora + ":" + minutos + ":" + segundos; 
+	
+	document.getElementById('ipaddress').value = ip;
+	document.getElementById('ipaddress2').value = ip;
+
+    }
+	
 </script>
 </head>
 <body>
@@ -42,18 +74,40 @@
 </div>
 
  <div class="form" id="formulario" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
-	<div class="card" style="width:50%; margin:auto; top:25%;"> <!-- Estilo para posicionar o card com o formulário -->
-        <h3>Cadastre-se</h3>
-		<div style="float:right; padding-right:1%;">
-		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
+	<div class="card formulario"> 
+		<div style="float:right;padding-left:90%;">
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
 		</div>
+		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%;">Nós não te enviaremos e-mails, não se preocupe!</h4>		
 		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
         <form action="" method="post" id="contactForm">
             <!-- elementos de entrada do formulário-->
-            <input id="nome" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
-            <input id="email" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
-            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
-            <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
+            <input id="nome" type="text" class="form-control" name="nome" placeholder="Qual o seu nome?" required><br>
+            				<label>Você realiza compras online?</label>
+            <div class="radio">
+                <label><input id="optradio" type="radio" name="optradio" required>sim</label>
+              </div>
+              <div class="radio">
+                <label><input id="optradio" type="radio" name="optradio" required>não</label>
+              </div>
+            
+			<!--  
+            <label>Qual segmento de trabalho você atua?</label>
+            <div class="form-group">
+                <select id="segmento" name="segmento">
+                <option value="0"></option>
+                <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+                <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Outros segmentos">Outros segmentos</option>
+            </select>
+            </div>  -->   
+			              <input id="ipaddress" style="display:none;"></input>
+			             <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br>
+						<input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
+					 
         </form>
     </div>
 </div>
@@ -62,29 +116,72 @@
 <div class="container col-md-10">
 	<div class="row">
 		   <article class="col-md-12">
-				<h2 style="text-align:center; color:sienna">Transformação Digital: Entenda o futuro das empresas.</h2>
+				<h2 style="text-align:center;">Transformação Digital: Entenda O Futuro Das Empresas</h2>
 				
-				
+				<h3 class="subtitulo" style="text-align:center;">Como esse &quot;futuro&quot; tem se tornado cada vez mais presente e determinante
+para o sucesso das empresas através da web.</h3>
 				<div class="fakeimg" style="width:70%; margin:auto;"><img src="images/transformacao_ digital.jpg" alt="Transformação Digital" width="100%"></div>
-				
-					<h4 class="subtitulo" style="text-align:center; color: slateblue">Como esse futuro tem se tornado cada vez mais presente e determinante
-						para o sucesso das empresas através da web.</h4>
-					 <p style="margin-top:1%;">	
-					A <b>transformação digital</b> vem mudando a visão de negócios mundo a fora, e nos faz
-					acreditar que o <b>digital</b> não é uma onda passageira.			   
-				</p>			   
-			   <p>Dentro da gestão empresarial, apesar do termo remeter ao uso de tecnologia e
-					informática, a transformação digital pode ser encarada como um programa da empresa
-					que será composto por uma série de projetos de mudanças, internas ou externas. Esses
-					projetos incluiriam o estabelecimento de novas formas de cultura organizacional, de
-					planejamento, organização e/ou recuperação, através da utilização de conceitos,
-					metodologias e tecnologias, todas alinhadas a complexidade demandada pelo mundo
-					atual.
+			   <p style="margin-top:1%; text-indent:50px;">
+				A transformação digital vem mudando a visão de negócios mundo a fora, e nos faz acreditar que o digital não é uma onda passageira.		   
 				</p>
-				<p style="color:limegreen">Automação de processos:</p>
-				<p style="text-align: center"><b>Ver mais</b></p>
+			   
+			   <p style="text-indent:50px;">Dentro da gestão empresarial, apesar do termo remeter ao uso de tecnologia e
+				informática, a transformação digital pode ser encarada como um programa da empresa
+				que será composto por uma série de projetos de mudanças, internas ou externas. Esses
+				projetos incluiriam o estabelecimento de novas formas de cultura organizacional, de
+				planejamento, organização e/ou recuperação, através da utilização de conceitos,
+				metodologias e tecnologias, todas alinhadas a complexidade demandada pelo mundo
+				atual.
+				</p>
+								
+				<h3 class="subtitulo">Automação de processos?</h3>
 				
-				<p>
+			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Ver Mais</a>  
+			  
+			 <!-- Formulário do "Ver Mais" -->
+
+<div class="form" id="formularioVerMais" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
+	<div class="card formulario"> 
+		<div style="float:right;padding-left:90%;">
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
+		</div>
+		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%;">Nós não te enviaremos e-mails, não se preocupe!</h4>		
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm2">
+            <!-- elementos de entrada do formulário-->
+            <input id="nome2" type="text" class="form-control" name="nome2" placeholder="Qual o seu nome?" required><br>
+            				<label>Você realiza compras online?</label>
+            <div class="radio">
+                <label><input id="optradio2" type="radio" name="optradio2" required>sim</label>
+              </div>
+              <div class="radio">
+                <label><input id="optradio2" type="radio" name="optradio2" required>não</label>
+              </div>
+            
+			<!--  
+            <label>Qual segmento de trabalho você atua?</label>
+            <div class="form-group">
+                <select id="segmento2" name="segmento">
+                <option value="0"></option>
+                <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+                <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+                <option value="Varejo">Varejo</option>
+                <option value="Serviços">Serviços</option>
+                <option value="Outros segmentos">Outros segmentos</option>
+            </select>
+            </div>  -->   
+			               <input id="ipaddress2" style="display:none;"></input>
+			             <input id="areaAtuacao2" type="text" class="form-control" name="areaAtuacao2" placeholder="Qual a sua área de atuação?" required><br>
+						<input type="submit" class="form-control btn-info" value="Continue a ler!"><br>
+					 
+        </form>
+    </div>
+</div>
+	
+	<div style="display:none; margin-top:1%;" id="divConteudoOculto">  
+		
+				   <p style="text-indent:50px;">
 					O tema da transformação digital nas empresas é tão importante e iminente, que
 					mobilizou organizações como OCDE (Organização para Cooperação e
 					Desenvolvimento Econômico), Fórum Econômico Mundial e ONU a pensarem sobre o
@@ -92,65 +189,50 @@
 					que estão acontecendo agora afetarão a economia mundial. Igualmente, iniciativas como
 					a indústria 4.0, criada pela Alemanha, demonstram preocupação individual dos países
 					em relação ao seu quadro sócio-econômico e político.
-				</p>
-				<p>No Brasil, um estudo desenvolvido pela IDC (Benchmark iDX Business Digitalization)
-				apurou a situação de 100 empresas de grande porte com relação às suas estratégias em
-				favor da digitalização. Foram analisados 4 pontos principais:
-
-			
-			</p>
-				<pre>
-					Como as empresas estão buscando inovações para melhorar a mobilidade interna da empresa;
-					Utilização de dados: buscar transformar milhares de dados em informações úteis.
-					Integração: a maneira como os processos internos estão conectados;
-					Produtividade: utilização de tecnologias para aumentar a eficiência do negócio.
-			</pre>
-						
-				
-				<p style="color: seagreen; font-size:20px;">Em uma escala de 0 a 100 para a importância de cada um desses
-					tópicos para os empresários, <b> Brasil obteve uma média de 67,5 —
-					considerada baixa comparada </b> aos países desenvolvidos. Ou seja,
-					ainda estamos dando os primeiros passos rumo a essa nova revolução.</p>
-
-				<p>Por isso, as empresas que já perceberam essa mudança de mercado, e o quanto se
-						atualizar é necessário para continuar nele ganham vantagem competitiva em relação às
-						demais. Recorrer à transformação digital acaba sendo o caminho para empresas
-						modificarem ou adequarem seus processos e cultura e suportarem de forma contínua
-						esse futuro que se apresenta.</p>
-
-				<p>Portanto, encare os desafios <b>desta mudança</b> e alcance resultados jamais alcançados. O
-							mercado incerto abre espaço para novos entrantes, engajados em mudar o status quo. Há
-							excelentes conteúdos na web que explicam bem sobre o assunto, como este podcast.
-							Procure uma empresa de <b>transformação digital</b> que esteja alinhada com a sua cultura e
-							seus objetivos. Entenda a real necessidade do seu negócio e entre nessa transformação!</p>
-
-				<p>As oportunidades neste mundo são inúmeras. Existem especialistas focados nisso,
-					estão otimistas e podem ajudar a sua empresa a se digitalizar e conquistar uma fatia
-					ainda maior do mercado atuante. Afinal, tecnologia não é um fim, e sim um meio pelo
-					qual o negócio pode alcançar melhores resultados. Lembre-se: você pode ajudar a sua
-					empresa a chegar na frente mais rápido!</p>
-				
-			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Saiba mais</a>  
-			  
-			  <!-- Formulário do "Ver Mais" -->
-
-<div class="form" id="formularioVerMais" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
-	<div class="card" style="width:50%; margin:auto; top:25%;"> <!-- Estilo para posicionar o card com o formulário Ver Mais -->
-        <h4>Cadastre-se!</h4>
-		<div style="float:right; padding-right:1%;">
-		<a href="" onclick="fecharForm()" style="color:red; font-size:1rem; z-index:2;">Fechar</a>
-		</div>
-		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
-        <form action="" method="post" id="contactForm2">
-            <!-- elementos de entrada do formulário-->
-            <input id="nome2" type="text" class="form-control" name="nome" placeholder="Digite o seu nome*" required><br>
-            <input id="email2" type="email" class="form-control" name="email" placeholder="Digite o seu email*" required><br>
-            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>  
-            <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
-        </form>
-    </div>
-</div>				
-
+				   </p>
+				   
+				   <p style="text-indent:50px;">
+				   No Brasil, um estudo desenvolvido pela IDC (Benchmark iDX Business Digitalization) apurou a 
+				   situação de 100 empresas de grande porte com relação às suas estratégias em favor da digitalização.
+				   Foram analisados 4 pontos principais:
+				   
+					   <ul class="lista-artigos">
+						<li>Mobilidade: como as empresas estão buscando inovações para melhorar a mobilidade interna da empresa</li>
+						<li>Utilização de dados: buscar transformar milhares de dados em informações úteis.</li>
+						<li>Integração: a maneira como os processos internos estão conectados.</li>
+						<li>Produtividade: utilização de tecnologias para aumentar a eficiência do negócio</li>
+					   </ul>	 					   
+				   </p>
+				   
+				   <p class="p_itens">
+				   Em uma escala de 0 a 100 para a importância de cada um desses tópicos para os empresários, o Brasil obteve uma média de 67,5
+				   — considerada baixa comparada aos países desenvolvidos. Ou seja, ainda estamos dando os primeiros passos rumo a essa nova revolução.
+				   </p>
+				   
+					<p style="text-indent:50px;">	
+					Por isso, as empresas que já perceberam essa mudança de mercado, e o quanto se atualizar é necessário para continuar nele ganham 
+					vantagem competitiva em relação às demais. Recorrer à transformação digital acaba sendo o caminho para empresas modificarem ou
+					adequarem seus processos e cultura e suportarem de forma contínua esse futuro que se apresenta. 
+					</p>
+					
+					<p style="text-indent:50px;">
+					Portanto, encare os desafios desta mudança e alcance resultados jamais alcançados. O mercado incerto abre espaço para novos 
+					entrantes, engajados em mudar o status quo. Há excelentes conteúdos na web que explicam bem sobre o assunto, como este podcast. 
+					Procure uma empresa de transformação digital que esteja alinhada com a sua cultura e seus objetivos. Entenda a real necessidade do
+					seu negócio e entre nessa transformação! 
+					</p>
+					
+					<p style="text-indent:50px;">
+					As oportunidades neste mundo são inúmeras. Existem especialistas focados nisso, estão otimistas e podem ajudar a sua empresa a se 
+					digitalizar e conquistar uma fatia ainda maior do mercado atuante. Afinal, tecnologia não é um fim, e sim um meio pelo qual o 
+					negócio pode alcançar melhores resultados. Lembre-se: você pode ajudar a sua empresa a chegar na frente mais rápido!
+					</p>
+					
+				</div>
+			</article>	
+		  </div>		
+</div>		
+	
 <div class="container-fluid" id="footer" style="height:auto;>
 	<div class="container col-md-10" style="z-index:1; height:50px;">
 	  <div class="row" id="linha-rodape">					
@@ -163,7 +245,7 @@
 
 <!-- Conexão com o Firebase --> 
 <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-<script src="conexaoFirebase.js"></script>
+<script src="js/conexaoFirebase.js"></script>
 
 <script>
 function abrirForm() {
