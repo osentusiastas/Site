@@ -79,36 +79,35 @@
 		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
 		</div>
 		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
-        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%;">Nós não te enviaremos e-mails, não se preocupe!</h4>		
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%; text-align:center">Nós não te enviaremos e-mails, não se preocupe!</h4>		
 		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
-        <form action="" method="post" id="contactForm">
-            <!-- elementos de entrada do formulário-->
-            <input id="nome" type="text" class="form-control" name="nome" placeholder="Qual o seu nome?" required><br>
-            				<label>Você realiza compras online?</label>
-            <div class="radio">
-                <label><input id="optradio" type="radio" name="optradio" required>sim</label>
-              </div>
-              <div class="radio">
-                <label><input id="optradio" type="radio" name="optradio" required>não</label>
-              </div>
-            
-			<!--  
-            <label>Qual segmento de trabalho você atua?</label>
-            <div class="form-group">
-                <select id="segmento" name="segmento">
-                <option value="0"></option>
-                <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
-                <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
-                <option value="Varejo">Varejo</option>
-                <option value="Serviços">Serviços</option>
-                <option value="Outros segmentos">Outros segmentos</option>
-            </select>
-            </div>  -->  
-			              <input id="ipaddress" style="display:none;"></input>
-			             <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br>
-						<input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
-					 
-        </form>
+    <form action="" method="post" id="contactForm">
+      <!-- elementos de entrada do formulário-->
+      <input id="nome" type="text" class="form-control" name="nome" placeholder="Qual o seu nome?" required><br>
+      <input id="email" type="email" class="form-control" name="email" placeholder="Qual o seu e-mail?" required><br>
+              <label>Você realiza vendas online?</label>
+      <div class="radio">
+          <label><input id="optradio" type="radio" name="optradio" required>sim</label>&nbsp
+          <label><input id="optradio" type="radio" name="optradio" required>não</label>
+        </div>
+       
+      <label>Qual é a sua área de atuação</label>
+      <div>
+          <select class="form-control" id="segmento" name="segmento">
+          <option value="0"></option>
+          <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+          <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Serviços">Serviços</option>
+          <option value="Outros segmentos">Outros segmentos</option>
+      </select>
+      </div>  
+      <br>   
+        <input id="ipaddress" style="display:none;"></input>
+       <!-- <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br> -->
+      <input type="submit" class="form-control btn-info" value="Continuar a ler"><br>
+     
+  </form>
     </div>
 </div>
 
@@ -136,23 +135,21 @@
 		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
 		</div>
 		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
-        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%;">Nós não te enviaremos e-mails, não se preocupe!</h4>		
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%; text-align: center">Nós não te enviaremos e-mails, não se preocupe!</h4>		
 		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
         <form action="" method="post" id="contactForm2">
             <!-- elementos de entrada do formulário-->
             <input id="nome2" type="text" class="form-control" name="nome2" placeholder="Qual o seu nome?" required><br>
-            				<label>Você realiza compras online?</label>
+            <input id="email2" type="email" class="form-control" name="email2" placeholder="Qual o seu e-mail?" required><br>
+            				<label>Você realiza vendas online?</label>
             <div class="radio">
-                <label><input id="optradio2" type="radio" name="optradio2" required>sim</label>
-              </div>
-              <div class="radio">
+                <label><input id="optradio2" type="radio" name="optradio2" required>sim</label>&nbsp
                 <label><input id="optradio2" type="radio" name="optradio2" required>não</label>
               </div>
-            
-			<!--  
-            <label>Qual segmento de trabalho você atua?</label>
+           
+            <label>Qual a sua área de atuação?</label>
             <div class="form-group">
-                <select id="segmento2" name="segmento">
+                <select class="form-control" id="segmento2" name="segmento">
                 <option value="0"></option>
                 <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
                 <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
@@ -160,10 +157,10 @@
                 <option value="Serviços">Serviços</option>
                 <option value="Outros segmentos">Outros segmentos</option>
             </select>
-            </div>  -->  
-			               <input id="ipaddress2" style="display:none;"></input>
-			             <input id="areaAtuacao2" type="text" class="form-control" name="areaAtuacao2" placeholder="Qual a sua área de atuação?" required><br>
-						<input type="submit" class="form-control btn-info" value="Continue a ler!"><br>
+            </div>
+            <br>
+			              <input id="ipaddress2" style="display:none;"></input>
+			             	<input type="submit" class="form-control btn-info" value="Continue a ler!"><br>
 					 
         </form>
     </div>
