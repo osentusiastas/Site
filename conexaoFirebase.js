@@ -22,10 +22,9 @@ function submitForm(e){
 		
 	//Pegar valores
 	var nome = getInputVal('nome');
-	//var email = getInputVal('email');
+	var email = getInputVal('email');
 	var optradio = getInputVal('optradio');
-	//var segmento = getInputVal('segmento');
-	var areaAtuacao = getInputVal('areaAtuacao'); 
+	var segmento = getInputVal('segmento');
 	var ipaddress = getInputVal('ipaddress');
 	
 	var compraInternet = 'Não';
@@ -34,7 +33,7 @@ function submitForm(e){
 	}
 
 	//Gravar Mensagens
-	saveMessage(nome, /*email, */ compraInternet, /*segmento*/ areaAtuacao, ipaddress);
+	saveMessage(nome, email, compraInternet, segmento, ipaddress);
 	
 	//Mostrar mensagem de confirmação de envio
 document.querySelector('.alerta').style.display = 'block';
@@ -54,14 +53,13 @@ function getInputVal(id){
 }
 
 //Gravar mensagens no Firebase
-function saveMessage(nome, /*email,*/ optradio, /*segmento*/areaAtuacao, ipaddress){
+function saveMessage(nome, email, optradio, segmento, ipaddress){
 	var newMessagesRef = messagesRef.push();
 	newMessagesRef.set({
 		nome: nome,
-		//email: email,
+		email: email,
 		compraNaInternet: optradio,
-		//segmento: segmento
-		areaAtuacao: areaAtuacao,
+		segmento: segmento,
 		ipaddress: ipaddress
 	});
 }
@@ -81,10 +79,9 @@ function submitForm2(e){
 				
 	//Pegar valores
 	var nome2 = getInputVal2('nome2');
-	//var email2 = getInputVal2('email');
+	var email2 = getInputVal2('email');
 	var optradio2 = getInputVal2('optradio2');
-	//var segmento2 = getInputVal2('segmento2');
-	var areaAtuacao2 = getInputVal2('areaAtuacao2'); 
+	var segmento2 = getInputVal2('segmento2');
 	var ipaddress2 = getInputVal2('ipaddress2');
 	
 	var compraInternet2 = 'Não';
@@ -93,7 +90,7 @@ function submitForm2(e){
 	}
 
 	//Gravar Mensagens
-	saveMessage2(nome2, /*email2, */ compraInternet2, /*segmento2*/ areaAtuacao2, ipaddress2);
+	saveMessage2(nome2, email2, compraInternet2, segmento2, ipaddress2);
 	
 	//Mostrar mensagem de confirmação de envio
 document.querySelector('.alerta').style.display = 'block';
@@ -118,13 +115,13 @@ function getInputVal2(id){
 }
 
 //Gravar mensagens no Firebase
-function saveMessage2(nome2, /*email2,*/ optradio2, /*segmento2*/areaAtuacao2, ipaddress2){
+function saveMessage2(nome2, email2, optradio2, segmento2, ipaddress2){
 	var newMessagesRef2 = messagesRef2.push();
 	newMessagesRef2.set({
 		nome2: nome2,
-		//email2: email2,
+		email2: email2,
 		compraNaInternet2: optradio2,
-		//segmento2: segmento2
+		segmento2: segmento2,
 		areaAtuacao2: areaAtuacao2,
 		ipaddress2: ipaddress2
 	});
