@@ -122,7 +122,6 @@ function saveMessage2(nome2, email2, optradio2, segmento2, ipaddress2){
 		email2: email2,
 		compraNaInternet2: optradio2,
 		segmento2: segmento2,
-		areaAtuacao2: areaAtuacao2,
 		ipaddress2: ipaddress2
 	});
 }
