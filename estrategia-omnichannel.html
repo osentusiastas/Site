@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Omnichannel: Estratégias para Melhorar as Vendas do seu e-commerce - InovaSkills Blog</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Estratégia Omnichannel">
+  <meta name="description" content="Meta-descrição: A estratégia Omnichannel se Baseia no uso simultâneo e interligado de diferentes canais de comunicação. Experiencia online entre Cliente e Fornecedor.">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Khand|Poppins:300,400|Teko:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <!-- Hotjar Tracking Code for http://www.inovaskills.com.br/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1286134,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	
+		window.onload = function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    };
+    function DisplayIP(response) {
+	
+	var a = new Date();
+    var ano = a.getFullYear();
+	
+	var m = new Date();
+    var mes = m.getMonth()+1;
+	
+	var d = new Date();
+    var dia = d.getDate();
+	
+	var h = new Date();
+    var hora = h.getHours();
+	
+	var min = new Date();
+    var minutos = min.getMinutes();
+	
+	var s = new Date();
+    var segundos = s.getSeconds();
+	
+    var ip = response.ip + "," + ano + "-" + mes + "-" + dia + " " + hora + ":" + minutos + ":" + segundos; 
+	
+	document.getElementById('ipaddress').value = ip;
+	document.getElementById('ipaddress2').value = ip;
+
+    }
+	
+</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '354855211802295');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=354855211802295&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md" id="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/inovaskills_logo.png" alt="Logo InovaSkills"></a>
+		</div>
+		<ul>
+			<li>
+				<a href="#formulario" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;" id="cadastroTopo">CADASTRE-SE</a>
+			</li>
+		</ul>
+	</div>
+  </div>
+</div>
+
+<div class="form" id="formulario" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
+	<div class="card formulario"> 
+		<div style="float:right;padding-left:90%;">
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
+		</div>
+		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%; text-align:center">Nós não te enviaremos e-mails, não se preocupe!</h4>		
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+    <form action="" method="post" id="contactForm">
+      <!-- elementos de entrada do formulário-->
+      <input id="nome" type="text" class="form-control" name="nome" placeholder="Qual o seu nome?" required><br>
+      <input id="email" type="email" class="form-control" name="email" placeholder="Qual o seu e-mail?" required><br>
+              <label>Você realiza vendas online?</label>
+      <div class="radio">
+          <label><input id="optradio" type="radio" name="optradio" required>sim</label>&nbsp
+          <label><input id="optradio" type="radio" name="optradio" required>não</label>
+        </div>
+       
+      <label>Qual é a sua área de atuação</label>
+      <div>
+          <select class="form-control" id="segmento" name="segmento">
+          <option value="0"></option>
+          <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+          <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Serviços">Serviços</option>
+          <option value="Outros segmentos">Outros segmentos</option>
+      </select>
+      </div>  
+      <br>   
+        <input id="ipaddress" style="display:none;"></input>
+       <!-- <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br> -->
+      <input type="submit" class="form-control btn-info" value="Continuar a ler"><br>
+     
+  </form>
+    </div>
+</div>
+
+<!-- Formulário do "Ver Mais" -->
+
+        <div class="form" id="formularioVerMais" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
+          <div class="card formulario"> 
+            <div style="float:right;padding-left:90%;">
+            <a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
+            </div>
+            <p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
+                <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%; text-align: center">Nós não te enviaremos e-mails, não se preocupe!</h4>		
+            <div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+                <form action="" method="post" id="contactForm2">
+                    <!-- elementos de entrada do formulário-->
+                    <input id="nome2" type="text" class="form-control" name="nome2" placeholder="Qual o seu nome?" required><br>
+                    <input id="email2" type="email" class="form-control" name="email2" placeholder="Qual o seu e-mail?" required><br>
+                            <label>Você realiza vendas online?</label>
+                    <div class="radio">
+                        <label><input id="optradio2" type="radio" name="optradio2" required>sim</label>&nbsp
+                        <label><input id="optradio2" type="radio" name="optradio2" required>não</label>
+                      </div>
+                   
+                    <label>Qual a sua área de atuação?</label>
+                    <div class="form-group">
+                        <select class="form-control" id="segmento2" name="segmento">
+                        <option value="0"></option>
+                        <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+                        <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+                        <option value="Varejo">Varejo</option>
+                        <option value="Serviços">Serviços</option>
+                        <option value="Outros segmentos">Outros segmentos</option>
+                    </select>
+                    </div>
+                    <br>
+                            <input id="ipaddress2" style="display:none;"></input>
+                             <input type="submit" class="form-control btn-info" value="Continue a ler!"><br>
+                   
+                </form>
+    </div>
+</div>
+  
+<div class="container col-md-10">
+	<div class="row">
+		   <article class="col-md-12">
+				<h2 style="text-align:center;">Omnichannel: Descubra como Essa Estratégia Pode Melhorar Os Resultados de Vendas do Seu E-Commerce</h2>
+				
+				<h3 class="subtitulo" style="text-align:center; font-weight:400;">Aprenda como os maiores e-commerces do mundo interpretam (e reagem) a nova experiência de compra proporcionada pela transformação digital.</h3>
+				<div class="fakeimg" style="width:70%; margin:auto;"><img src="images/artigo1.jpg" alt="Estratégia Omnichannel" width="100%"></div>
+			   <p style="margin-top:1%; text-indent:50px;">
+			   As pessoas não buscam mais apenas um produto na loja, compram e vão embora, ou visitam a página de e-commerce, realizam uma compra e aguardam a entrega do item em casa. A tendência é a busca por conveniência e novas formas de interação com as lojas. Logo, todo esse impacto positivo de um lado (E-commerce), traz um impacto negativo de outro (Loja física), que por hora já causou grandes danos ao mercado tradicional. Por isso, o Omnichannel é peça fundamental para todo varejo que queira se manter em um mundo conectado.
+			   </p>
+			   <p style="text-indent:50px;">A estratégia Omnichannel se baseia no uso simultâneo e interligado de diferentes canais de comunicação, com o objetivo de estreitar a relação entre cliente e fornecedor, online e offline. Ou seja, proporcionar uma experiência única e exclusiva para cada cliente, pois o mesmo cliente pode estar em outras várias plataformas, ou até em loja física a procura do produto ou serviço que deseja.</p>
+			   <h3 class="subtitulo">Como funciona?</h3>
+			  
+			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Ver Mais</a>  
+	
+	<div style="display:none; margin-top:1%;" id="divConteudoOculto">    
+				  
+				   <p style="text-indent:50px;">
+					Na estratégia  Omnichannel, a venda é possível em mais de um canal (online, físico, bot, e-commerce, etc) e existem diversas formas de contato para o cliente, só que de maneira integrada. E, principalmente, o banco de dados integrado, permitindo trocar e transitar informações entre canais diferentes sem comprometer a experiência do consumidor. Traduzindo em poucas palavras: Omnichannel é uma comunicação única; definindo padrões e regras de atendimento para o cliente de forma única. Isso permite, por exemplo, não ter preços diferentes nas lojas ou políticas de trocas diferentes - divergências muito comuns no varejo, que geram muito atrito. 
+				   </p>
+				   <p style="text-indent:50px;">No Omnichannel, aquela visão de empresa varejista departamentalizada é desconstruída; passa a ser matricial, traz conceitos de inovação. No modelo omni, fala-se de uma área só, responsável pelos “canais de venda”, e todos trabalham juntos em prol do cliente. É, de fato, uma revisão geral de processo e de continuidade, visando que a migração de experiência entre canais seja sempre seguindo uma mesma linha. E isso desconstrói a visão de “silos funcionais” do varejo tradicional (singular).</p>
+				   <p style="text-indent:50px;">Isso não só melhora significativamente a experiência do cliente, como também garante que, à medida que os clientes mudam de canal para canal, seu contexto e histórico se movam com eles. E hoje os consumidores valorizam e esperam esse tipo de interação com a marca; uma experiência perfeita por parte das empresas, que gera engajamento e fidelização.</p>
+				   
+				   <h3 class="subtitulo">Case de sucesso no outro lado do mundo</h3>
+					<p style="text-indent:50px;">
+					Atualmente, o Alibaba, empresa chinesa, é uma dos maiores e-commerces do mundo que vende desde materiais industriais até artigos específicos de decoração de casa. Seu sucesso exponencial é reflexo principalmente das suas ações de inovação e tecnologia no que tange a integração dos seus processos internos para alcançar uma boa disponibilidade de produtos, velocidade de entrega e oferecer um preço competitivo aos seus clientes.
+					</p>
+					<p style="text-indent:50px;">Além disso, um fator determinante para o crescimento da empresa está justamente na decisão de implementar a experiência de compras omnichannel, investindo cerca de 10 bilhões de dólares em varejos físicos. Um dos focos dessa estratégia aconteceu com a criação de lojas que possuem alimentos frescos, até o momento já foram abertas 46 lojas em cidades espalhadas pela China e ecom perspectiva de abrir 2 mil unidades nos próximos 5 anos, conseguindo assim atingir um maior número de vendas e clientes fidelizados a empresa.</p>
+					<p style="text-indent:50px;">E qual seria essa experiência que conquistou milhares de pessoas ? Um bom exemplo seria a possibilidade de realizar as compras do supermercado pelo aplicativo para pessoas que moram até 3 km de uma loja fisica, mas caso queira comprar nas lojas é possível escanear o código do produto pelo celular, pagar, e ir embora sem precisar esperar em filas. Esse modelo foi replicado para lojas de roupas, lojas de conveniências e até mesmo na hora de comprar um carro. </p>
+					
+					<h3 class="subtitulo">E no Brasil?</h3>
+					<p style="text-indent:50px;">
+					A penetração média do e-commerce no Brasil é de 2 a 3% de transações via canal online. A maior referência de penetração é 30 a 35%, e a média global é 11%. Ou seja, no comparativo, a média ainda está baixa no país, e o setor tem muita oportunidade.
+					</p>
+					<p style="text-indent:50px;">A perspectiva? É de que cada vez mais o varejo online cresça numa proporção muito maior, enquanto o varejo físico se integre ao varejo online. Como? Através de Ferramentas que ajudem o cliente cada vez mais a acessar o produto rápido, como APIs de verificação do estoque, uso de geolocalização, etc. E, com isso, tem-se uma visão transparente do estoque para o cliente.</p>
+					<p style="text-indent:50px;" >Além disso, existe uma grande ineficiência na venda online  com o pagamento de 15 a 20% do custo total no custo do frete. A proposta da estratégia Omnichannel é justamente reduzir esse custo, estimulando a compra do estoque da região ou loja próxima ao cliente. O estoque existe.  O desafio é tecnológico de ter visão desse estoque e poder comprar dele, pagando pouco ou nada no frete, com a conveniência de entrega muito mais rápida.</p>
+			</div>
+			</div>
+			</article>	
+		  </div>		
+</div>		
+	
+<div class="container-fluid" id="footer" style="height:auto;>
+	<div class="container col-md-10" style="z-index:1; height:50px;">
+	  <div class="row" id="linha-rodape">					
+			  <div class="logo-rodape">
+				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
+				<p style="text-align:left;">&copy; 2019 Todos os direitos reservados.</p>
+			  </div> 		
+	  </div>
+</div>			 
+
+<!-- Conexão com o Firebase --> 
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="js/conexaoFirebase.js"></script>
+
+<script>
+function abrirForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fecharForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+/* Scripts para o Formulário Ver Mais */
+
+function abrirFormVerMais() {
+  var x = document.getElementById("formularioVerMais");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fecharFormVerMais() {
+  var x = document.getElementById("formularioVerMais");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>
