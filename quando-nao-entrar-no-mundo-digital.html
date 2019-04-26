@@ -56,7 +56,8 @@
 	
 </script>
 
-<!-- Facebook Pixel Code -->
+</script>
+<!-- Facebook Pixel Code   -- Código anterior
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -72,7 +73,34 @@
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=354855211802295&ev=PageView&noscript=1"
 /></noscript>
+<!-- End Facebook Pixel Code -->  
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '794914724213836');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=794914724213836&ev=PageView&noscript=1"
+/></noscript>
 <!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138495776-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-138495776-1');
+</script>
 
 </head>
 <body>
@@ -124,8 +152,13 @@
       <br>   
         <input id="ipaddress" style="display:none;"></input>
        <!-- <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br> -->
-      <input type="submit" class="form-control btn-info" value="Continuar a ler"><br>
-     
+      <input type="submit" id="submitButton" class="form-control btn-info" value="Continuar a ler"><br>
+       <script type="text/javascript">
+			$( '#$submitButton' ).click(function() {
+			<script>
+			fbq('track', 'Lead');
+			  </script>;
+			</script>
   </form>
     </div>
 </div>
@@ -135,14 +168,22 @@
 	<div class="row">
 		   <article class="col-md-12">
 				<h2 style="text-align:center;">Saiba Quando Não Entrar No Mundo Digital</h2>
+				
+                <h3 class="subtitulo" style="text-align:center; font-weight:400;">
+				Confira os 4 grandes motivos que fazem você perder dinheiro no mundo digital. Embora a internet seja aberta e democrática, para 
+				ter sucesso através dela, os caminhos não são tão simples como parecem ser. Você já pagou caro por aqueles cursos que prometem 
+				fazer 6 ou 7 dígitos em uma semana, ou outros tipos de "fórmulas" na internet, e viu que não era bem assim, esse vídeo pode te 
+				ajudar!
+				</h3>
+				<br>
 				<iframe style="display:block; margin:auto;" width="560" height="315" src="https://www.youtube.com/embed/P4dnmqWfXhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			
 
 			 <!-- Formulário do "Opinião" -->
 
-<div style="display:block;  width:50%; margin:auto; "> 
+<div style="display:block;  width:50%; margin:3% auto; "> 
 	<div class="card formulario"> 
-		<h4 style="margin-bottom:2%;">Curtiu? Conta pra gente!</h4>		
+		<h4 style="margin-bottom:2%;">Você concorda com os 4 tópicos abordados? Conta pra gente o que achou:</h4>		
 		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
         <form action="" method="post" id="contactForm2">
                     <!-- elementos de entrada do formulário-->
@@ -168,15 +209,87 @@
                     <br>     
 					        <textarea name="mensagem" id="comment" cols="20" rows="5" class="form-control" placeholder="O que achou? Conta pra gente!"></textarea><br>
                             <input id="ipaddress2" style="display:none;"></input>
-                             <input type="submit" class="form-control btn-info" value="Enviar"><br>
-                   
-                </form>
+                             <input type="submit" id="submitButton2" class="form-control btn-info" value="Enviar"><br>
+                                 <script type="text/javascript">
+									$( '#$submitButton2' ).click(function() {
+									<script>
+									fbq('track', 'Lead');
+									  </script>
+									</script>   
+							</form>							
     </div>
 </div>		  
 </article>
 			</div>
 </div>		  	
-		
+	
+<div class="container col-md-10" style="margin-top:5%;">          
+	                <h3 class="subtitulo">Depoimentos</h3> <br>
+					
+		            <h4 class="p_itens"> <b>Marcela Berkir Silva </b></h4>				   
+				   <p style="text-indent:50px;"><i>
+				   "Vídeo fraco! Discordo totalmente em muito pontos. Nem perderei meu tempo aqui falando contra os argumentos fracos utilizados. 
+				   Experimente ver quantas pessoas estão dando certo graças a oportunidades na web. O fato de nem todos darem certo, isso é a lei 
+				   da vida! E quanto a ter dinheiro, conheço muita gente que mudou de vida sem 1 centavo no bolso através do digital."</i>	   
+				   </p><br>
+				   
+				   <h4 class="p_itens"><b>Antonio Stadler</b></h4>				   
+				   <p style="text-indent:50px;"><i>
+				   "Finalmente alguém no mundo digital pra falar a verdade contra esses filhos de uma p... É fogo ver como o evento desses imbecis 
+				   lotam de gente achando que ficarão ricos da noite pro dia, ou em uma semana.. kkkkk. Só não dá mais ódio desses caras porque se 
+				   eles fazem sucesso é porque tem gente bem tapada pra seguir."</i>
+				   </p><br>
+				   
+					<h4 class="p_itens"><b>Cristina Pentagna</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Jaja vem a turminha do Érico Rocha e Alex Vargas pra defender esses caras como se fosse times de futebol.. kkkkkk"</i>
+					</p><br>				
+					
+					<h4 class="p_itens"><b>Leandro Ramos</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muito bom o vídeo! É isso mesmo. Acredito que o próprio Érico Rocha já usou a expressão "Se eu fiz, você também pode fazer" 
+					ou "Esse negócio funciona pra mim?Funciona para qualquer um" - E sabemos que não é bem assim... Como vocês comentaram no vídeo, 
+					existem "X" variáveis para a "máquina" funcionar."</i>
+					</p><br>		
+					
+				   <h4 class="p_itens"><b>Raissa Freitas</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muito interessante essa visão, não costumo ver esse tipo de conteúdo disponível por aí, foi esclarecedor."</i>
+					</p><br>		
+					
+					<h4 class="p_itens"><b>Claudiane Melo</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Desculpe, mas pisaram feio na bola. Sou empreendedor há 4 anos e aluno do curso do Erico Rocha, o qual vocês fazem indiretas.  
+					O curso é bem completo e realmente entrega o que promete., eu mesmo já faturo hoje mais de 5mil da minha casa. Avaliem melhor antes 
+					de criticarem com indiretas. "</i>
+					</p><br>		
+					
+					<h4 class="p_itens"><b>Rodrigo Rafael</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muito bom o vídeo. Eu como alguém que já trabalhou como Vendedor, Gerente de Vendas e Coordenador de Marketing, compreendo o 
+					que é ensinado na Fórmula do Lançamento é algo sim eficiente e alguém que não entende de marketing digital e vendas, aprenderá 
+					muita cosia nova."</i>
+					</p><br>		
+
+                   <h4 class="p_itens"><b>Kledir Soares</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muitíssimo relevante...eu já adquiri muita coisa ate por curiosidade e são várias promessas porém, o ganhar mesmo requer investimento
+					e isso não e deixado muito claro em nenhum curso destes aí não. Fórmula de Lançamento e uma Fórmula Negócio OnLine outro e vários e 
+					vários"</i>
+					</p><br>		
+
+                   <h4 class="p_itens"><b>Raimundo Santos</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Desculpe, mas pisaram feio na bola. Sou empreendedor há 4 anos e aluno do curso do Erico Rocha, o qual vocês fazem indiretas.  
+					O curso é bem completo e realmente entrega o que promete., eu mesmo já faturo hoje mais de 5mil da minha casa. Avaliem melhor 
+					antes de criticarem com indiretas. "</i>
+					</p><br>
+
+                   <h4 class="p_itens"><b>Antonio Franchesi</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Só vi aqui pra ver o circo pegar fogo nos comentários... rsrsrs Quanta gente sem ter o que fazer!"</i>
+					</p>					
+	    </div>	
 	
 <div class="container-fluid" id="footer" style="height:auto;>
 	<div class="container col-md-10" style="z-index:1; height:50px;">
