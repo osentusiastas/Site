@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Saiba Quando Não Entrar No Mundo Digital - InovaSkills Blog</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="mundo digital">
+  <meta name="description" content="Vídeo com dicas sobre o mundo digital.">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Khand|Poppins:300,400|Teko:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+  <!-- Hotjar Tracking Code for http://www.inovaskills.com.br/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1286134,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	
+	window.onload = function () {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+        document.getElementsByTagName("head")[0].appendChild(script);
+    };
+    function DisplayIP(response) {
+	
+	var a = new Date();
+    var ano = a.getFullYear();
+	
+	var m = new Date();
+    var mes = m.getMonth()+1;
+	
+	var d = new Date();
+    var dia = d.getDate();
+	
+	var h = new Date();
+    var hora = h.getHours();
+	
+	var min = new Date();
+    var minutos = min.getMinutes();
+	
+	var s = new Date();
+    var segundos = s.getSeconds();
+	
+    var ip = response.ip + "," + ano + "-" + mes + "-" + dia + " " + hora + ":" + minutos + ":" + segundos; 
+	
+	document.getElementById('ipaddress').value = ip;
+	document.getElementById('ipaddress2').value = ip;
+
+    }
+	
+</script>
+
+</script>
+<!-- Facebook Pixel Code   -- Código anterior
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '354855211802295');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=354855211802295&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->  
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '794914724213836');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=794914724213836&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138495776-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-138495776-1');
+</script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md" id="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/inovaskills_logo.png" alt="Logo InovaSkills"></a>
+		</div>
+		<ul>
+			<li>
+				<a href="#formulario" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;" id="cadastroTopo">CADASTRE-SE</a>
+			</li>
+		</ul>
+	</div>
+  </div>
+</div>
+
+ <div class="form" id="formulario" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
+	<div class="card formulario"> 
+		<div style="float:right;padding-left:90%;">
+		<a href="" onclick="fecharForm()" style="color:red; font-size:1.8rem;"><i class="far fa-times-circle"></i></a>
+		</div>
+		<p style="font-family:'Microsoft PhagsPa', sans-serif; font-size:1.1rem; text-align:center;">Deixe suas informações apenas para nós conhecermos seus interesses.</p>
+        <h4 style="font-size:1.2rem; font-family:'Microsoft PhagsPa', sans-serif; font-weight:800; margin-bottom:5%; text-align:center">Nós não te enviaremos e-mails, não se preocupe!</h4>		
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+    <form action="" method="post" id="contactForm">
+      <!-- elementos de entrada do formulário-->
+      <input id="nome" type="text" class="form-control" name="nome" placeholder="Qual o seu nome?" required><br>
+      <input id="email" type="email" class="form-control" name="email" placeholder="Qual o seu e-mail?" required><br>
+              <label>Você realiza vendas online?</label>
+      <div class="radio">
+          <label><input id="optradio" type="radio" name="optradio" required>sim</label>&nbsp
+          <label><input id="optradio" type="radio" name="optradio" required>não</label>
+        </div>
+       
+      <label>Qual é a sua área de atuação</label>
+      <div>
+          <select class="form-control" id="segmento" name="segmento">
+          <option value="0"></option>
+          <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+          <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+          <option value="Varejo">Varejo</option>
+          <option value="Serviços">Serviços</option>
+          <option value="Outros segmentos">Outros segmentos</option>
+      </select>
+      </div>  
+      <br>   
+        <input id="ipaddress" style="display:none;"></input>
+       <!-- <input id="areaAtuacao" type="text" class="form-control" name="areaAtuacao" placeholder="Qual a sua área de atuação?" required><br> -->
+      <input type="submit" id="submitButton" class="form-control btn-info" value="Continuar a ler"><br>
+       <script type="text/javascript">
+			$( '#$submitButton' ).click(function() {
+			<script>
+			fbq('track', 'Lead');
+			  </script>;
+			</script>
+  </form>
+    </div>
+</div>
+
+  
+<div class="container col-md-10">
+	<div class="row">
+		   <article class="col-md-12">
+				<h2 style="text-align:center;">Saiba Quando Não Entrar No Mundo Digital</h2>
+				
+                <h3 class="subtitulo" style="text-align:center; font-weight:400;">
+				Confira os 4 grandes motivos que fazem você perder dinheiro no mundo digital. Embora a internet seja aberta e democrática, para 
+				ter sucesso através dela, os caminhos não são tão simples como parecem ser. Você já pagou caro por aqueles cursos que prometem 
+				fazer 6 ou 7 dígitos em uma semana, ou outros tipos de "fórmulas" na internet, e viu que não era bem assim, esse vídeo pode te 
+				ajudar!
+				</h3>
+				<br>
+				<iframe style="display:block; margin:auto;" width="560" height="315" src="https://www.youtube.com/embed/P4dnmqWfXhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+
+			 <!-- Formulário do "Opinião" -->
+
+<div style="display:block;  width:50%; margin:3% auto; "> 
+	<div class="card formulario"> 
+		<h4 style="margin-bottom:2%;">Você concorda com os 4 tópicos abordados? Conta pra gente o que achou:</h4>		
+		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
+        <form action="" method="post" id="contactForm2">
+                    <!-- elementos de entrada do formulário-->
+                    <input id="nome2" type="text" class="form-control" name="nome2" placeholder="Qual o seu nome?" required><br>
+                    <input id="email2" type="email" class="form-control" name="email2" placeholder="Qual o seu e-mail?" required><br>
+                            <label>Você realiza vendas online?</label>
+                    <div class="radio">
+                        <label><input id="optradio2" type="radio" name="optradio2" required>sim</label>&nbsp
+                        <label><input id="optradio2" type="radio" name="optradio2" required>não</label>
+                      </div>
+                   
+                    <label>Qual a sua área de atuação?</label>
+                    <div class="form-group">
+                        <select class="form-control" id="segmento2" name="segmento2">
+                        <option value="0"></option>
+                        <option value="Indústria de bens duráveis">Indústria de bens duráveis</option>
+                        <option value="Indústria de bens não duráveis">Indústria de bens não duráveis</option>
+                        <option value="Varejo">Varejo</option>
+                        <option value="Serviços">Serviços</option>
+                        <option value="Outros segmentos">Outros segmentos</option>
+                    </select>
+                    </div>
+                    <br>     
+					        <textarea name="mensagem" id="comment" cols="20" rows="5" class="form-control" placeholder="O que achou? Conta pra gente!"></textarea><br>
+                            <input id="ipaddress2" style="display:none;"></input>
+                             <input type="submit" id="submitButton2" class="form-control btn-info" value="Enviar"><br>
+                                 <script type="text/javascript">
+									$( '#$submitButton2' ).click(function() {
+									<script>
+									fbq('track', 'Lead');
+									  </script>
+									</script>   
+							</form>							
+    </div>
+</div>		  
+</article>
+			</div>
+</div>		  	
+	
+<div class="container col-md-10" style="margin-top:5%;">          
+	                <h3 class="subtitulo">Depoimentos</h3> <br>
+					
+		            <h4 class="p_itens"> <b>Marcela Berkir Silva </b></h4>				   
+				   <p style="text-indent:50px;"><i>
+				   "Vídeo fraco! Discordo totalmente em muito pontos. Nem perderei meu tempo aqui falando contra os argumentos fracos utilizados. 
+				   Experimente ver quantas pessoas estão dando certo graças a oportunidades na web. O fato de nem todos darem certo, isso é a lei 
+				   da vida! E quanto a ter dinheiro, conheço muita gente que mudou de vida sem 1 centavo no bolso através do digital."</i>	   
+				   </p><br>
+				   
+				   <h4 class="p_itens"><b>Antonio Stadler</b></h4>				   
+				   <p style="text-indent:50px;"><i>
+				   "Finalmente alguém no mundo digital pra falar a verdade contra esses filhos de uma p... É fogo ver como o evento desses imbecis 
+				   lotam de gente achando que ficarão ricos da noite pro dia, ou em uma semana.. kkkkk. Só não dá mais ódio desses caras porque se 
+				   eles fazem sucesso é porque tem gente bem tapada pra seguir."</i>
+				   </p><br>
+				   
+					<h4 class="p_itens"><b>Cristina Pentagna</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Jaja vem a turminha do Érico Rocha e Alex Vargas pra defender esses caras como se fosse times de futebol.. kkkkkk"</i>
+					</p><br>				
+					
+					<h4 class="p_itens"><b>Leandro Ramos</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muito bom o vídeo! É isso mesmo. Acredito que o próprio Érico Rocha já usou a expressão "Se eu fiz, você também pode fazer" 
+					ou "Esse negócio funciona pra mim?Funciona para qualquer um" - E sabemos que não é bem assim... Como vocês comentaram no vídeo, 
+					existem "X" variáveis para a "máquina" funcionar."</i>
+					</p><br>		
+					
+				   <h4 class="p_itens"><b>Raissa Freitas</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muito interessante essa visão, não costumo ver esse tipo de conteúdo disponível por aí, foi esclarecedor."</i>
+					</p><br>		
+					
+					<h4 class="p_itens"><b>Claudiane Melo</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Desculpe, mas pisaram feio na bola. Sou empreendedor há 4 anos e aluno do curso do Erico Rocha, o qual vocês fazem indiretas.  
+					O curso é bem completo e realmente entrega o que promete., eu mesmo já faturo hoje mais de 5mil da minha casa. Avaliem melhor antes 
+					de criticarem com indiretas. "</i>
+					</p><br>		
+					
+					<h4 class="p_itens"><b>Rodrigo Rafael</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muito bom o vídeo. Eu como alguém que já trabalhou como Vendedor, Gerente de Vendas e Coordenador de Marketing, compreendo o 
+					que é ensinado na Fórmula do Lançamento é algo sim eficiente e alguém que não entende de marketing digital e vendas, aprenderá 
+					muita cosia nova."</i>
+					</p><br>		
+
+                   <h4 class="p_itens"><b>Kledir Soares</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Muitíssimo relevante...eu já adquiri muita coisa ate por curiosidade e são várias promessas porém, o ganhar mesmo requer investimento
+					e isso não e deixado muito claro em nenhum curso destes aí não. Fórmula de Lançamento e uma Fórmula Negócio OnLine outro e vários e 
+					vários"</i>
+					</p><br>		
+
+                   <h4 class="p_itens"><b>Raimundo Santos</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Desculpe, mas pisaram feio na bola. Sou empreendedor há 4 anos e aluno do curso do Erico Rocha, o qual vocês fazem indiretas.  
+					O curso é bem completo e realmente entrega o que promete., eu mesmo já faturo hoje mais de 5mil da minha casa. Avaliem melhor 
+					antes de criticarem com indiretas. "</i>
+					</p><br>
+
+                   <h4 class="p_itens"><b>Antonio Franchesi</b></h4>										
+					<p style="text-indent:50px;"><i>	
+					"Só vi aqui pra ver o circo pegar fogo nos comentários... rsrsrs Quanta gente sem ter o que fazer!"</i>
+					</p>					
+	    </div>	
+	
+<div class="container-fluid" id="footer" style="height:auto;>
+	<div class="container col-md-10" style="z-index:1; height:50px;">
+	  <div class="row" id="linha-rodape">					
+			  <div class="logo-rodape">
+				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
+				<p style="text-align:left;">&copy; 2019 Todos os direitos reservados.</p>
+			  </div> 		
+	  </div>
+</div>			 
+
+<!-- Conexão com o Firebase --> 
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script src="js/conexaoFirebase2.js"></script>
+
+<script>
+function abrirForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fecharForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+/* Scripts para o Formulário Ver Mais */
+
+function abrirFormVerMais() {
+  var x = document.getElementById("formularioVerMais");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fecharFormVerMais() {
+  var x = document.getElementById("formularioVerMais");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>
