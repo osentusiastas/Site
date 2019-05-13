@@ -111,11 +111,22 @@
 		<div class="logo">
 			<a href="index.html"><img src="images/inovaskills_logo.png" alt="Logo InovaSkills"></a>
 		</div>
-		<ul>
-			<li>
-				<a href="#formulario" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;" id="cadastroTopo">CADASTRE-SE</a>
-			</li>
-		</ul>
+		<nav class="menu">
+										<ul>
+												<li><a href="">MENU</a>
+														<ul>
+															  <li><a href="index.html">Página inicial</a></li>
+																<li><a href="estrategia-omnichannel.html">Omnichannel</a></li>
+																<li><a href="transformacao-digital.html">Transformação digital</a></li>
+																<li><a href="passos-importantes-para-a-transformacao-digital.html">6 passos importantes</a></li>
+																<li><a href="como-se-destacar-no-mundo-digital.html">Como se destacar</a></li>
+																<li><a href="como-melhorar-a-performance-do-seu-e-commerce.html">Melhore seu e-commerce</a></li>
+																<li><a href="10-principais-eventos-sobre-e-commerce-2019.html">Eventos de E-commerce</a></li>
+														</ul>
+												</li>
+												<li><a href="#" onclick="abrirForm()">Cadastre - se</a></li>
+										</ul>
+								</nav>
 	</div>
   </div>
 </div>
@@ -176,12 +187,13 @@
 				ajudar!
 				</h3>
 				<br>
+				<div class="embed-responsive embed-responsive-16by9">
 				<iframe style="display:block; margin:auto;" width="560" height="315" src="https://www.youtube.com/embed/P4dnmqWfXhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			
+			    </div>
 
 			 <!-- Formulário do "Opinião" -->
 
-<div style="display:block;  width:50%; margin:3% auto; "> 
+<div style="display:block;  width:100%; margin:3% auto;"> 
 	<div class="card formulario"> 
 		<h4 style="margin-bottom:2%;">Você concorda com os 4 tópicos abordados? Conta pra gente o que achou:</h4>		
 		<div class="alerta"><p>Seu cadastro foi realizado com sucesso. Muito obrigado!</p></div>
@@ -291,15 +303,22 @@
 					</p>					
 	    </div>	
 	
-<div class="container-fluid" id="footer" style="height:auto;>
-	<div class="container col-md-10" style="z-index:1; height:50px;">
+<div class="display container-fluid" id="footer" style="height:fit-content">
+	<div class="container col-md-10" style="z-index:1; height:auto; margin-top: 0px; position: relative" >
 	  <div class="row" id="linha-rodape">					
 			  <div class="logo-rodape">
-				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
-				<p style="text-align:left;">&copy; 2019 Todos os direitos reservados.</p>
-			  </div> 		
-	  </div>
-</div>			 
+			  <div style="width:100%;">	
+				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills"><br>
+				<h6>para entrar em contato, entre em uma de nossas redes:</h6>
+				<a href="https://www.instagram.com/inovaskills/" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-instagram"></i>&nbsp; INSTAGRAM</a>
+		    <a href="https://www.facebook.com/inovaskills" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-facebook"></i>&nbsp; FACEBOOK</a>
+				<a href="https://www.linkedin.com/company/inova-skills/" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-linkedin"></i>&nbsp; LINKEDIN</a>
+				<h5><p style="text-align:center;">&copy; 2019 Todos os direitos reservados.</p></h5>	
+		</div>
+      </div>
+     </div>
+   </div>
+ </div>				 
 
 <!-- Conexão com o Firebase --> 
 <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>

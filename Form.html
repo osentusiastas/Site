@@ -3,36 +3,21 @@
  <head>
      <title>Formulário</title>
        <meta http-equiv="Content-Type" content="text/html"; charset="uft=8" />
-       <link src="css/bootstrap.css"/>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" href="estilos.css">
      
  </head>
  <body>
-     <h2>Informe os seus dados!</h2>
-     <hr />
-     <div>
-     <form action="" method="post">
-        <!-- elementos de entrada do formulário-->
-        <ul style="list-style-type: nome;">
-            <label>Nome</label>
-            <input type="text" name="firsname" size="30" maxlength="25" required/>
-            
-            <br><br>
-
-            <label>E-mail</label> 
-            <input type="email" name="e-mail" size="30" maxlength="25" required/>
-            
-            <br><br>
-
-            <label>Telefone</label>
-            <input type="phone" placeholder="00-00000-0000" name="telefone" required/>
-            
-            <br><br>
-                <p style="line-height: 2em; margin: 2em;">
-                <input type="submit" value="Enviar" />
-                <input type="reset" value="Limpar" />
-                </p>
-        </ul>
-     </form>
+    <div class="card">
+        <h3>Cadastre-se</h3>
+        <form action="envia.php" method="post" >
+            <!-- elementos de entrada do formulário-->
+            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
+            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
+             <input type="numember" class="form-control" name="telefone" placeholder="Digite o seu telefone*"><br>
+              <input type="text" class="form-control" name="mensagem" placeholder="Como você pode ajudar?*"><br>
+            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
+        </form>
     </div>
- </body>
+</body>
 </html>

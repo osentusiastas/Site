@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>InovaSkills Blog - Artigo</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Khand|Poppins:300,400|Teko:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md" id="header">
+		<div class="logo">
+			<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
+		</div>
+		<ul>
+			<li>
+				<a href="#formulario" onclick="abrirForm()">Cadastre-se</a>
+			</li>
+		</ul>
+	</div>
+  </div>
+</div>
+
+<div class="form" id="formulario">
+	<div class="card">
+        <h3>Cadastre-se</h3>
+		<div style="float:right; padding-right:1%;">
+		<a href="" style="color:red; font-size:1rem;">Fechar</a>
+		</div>
+        <form action="" method="post" >
+            <!-- elementos de entrada do formulário-->
+            <input type="text" class="form-control" name="nome" placeholder="Digite o seu nome*"><br>
+            <input type="email" class="form-control" name="email" placeholder="Digite o seu email*"><br>
+            <input type="submit" class="form-control btn-info" value="Quero fazer parte!"><br>
+            <p><strong> Prometemos não usar o seu email para enviar qualquer tipo de Spam.</strong></p>
+        </form>
+    </div>
+</div>
+  
+<div class="container col-md-10">
+	<div class="row">
+		   <article class="col-md-12">
+				<h2>Título</h2>
+				<div class="fakeimg" style="height:200px;">Image</div>
+			   <p>
+			   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+			   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+			   when an unknown printer took a galley of type and scrambled it to make a type 
+			   specimen book.
+			   </p>
+			   <h2>Subtítulo</h2>
+			   <p>
+			   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+			   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+			   when an unknown printer took a galley of type and scrambled it to make a type 
+			   specimen book. <br>
+			   It has survived not only five centuries, but also the leap into electronic 
+			   typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+			   the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+			   with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br>
+			   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+			   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+			   when an unknown printer took a galley of type and scrambled it to make a type 
+			   specimen book. <br>
+			   It has survived not only five centuries, but also the leap into electronic 
+			   typesetting, remaining essentially unchanged. It was popularised in the 1960s with 
+			   the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+			   with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+			   </p>
+			   <a href="#">Ver mais</a>
+		  </div>
+	</article>	
+</div>		
+	
+<div class="container-fluid" id="footer" style="height:auto;>
+	<div class="container col-md-10" style="z-index:1; height:50px;">
+	  <div class="row" id="linha-rodape">					
+			  <div class="logo-rodape">
+				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
+				<p style="text-align:left;">&copy; 2019 Todos os direitos reservados.</p>
+			  </div> 		
+	  </div>
+	 </div>
+
+<script>
+function abrirForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function fecharForm() {
+  var x = document.getElementById("formulario");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+</body>
+</html>

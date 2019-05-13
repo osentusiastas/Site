@@ -38,9 +38,10 @@ function submitForm(e){
 	//Mostrar mensagem de confirmação de envio
 document.querySelector('.alerta').style.display = 'block';
 
-//Esconder a mensagem após 4 segundos
+//Esconder a mensagem após 3 segundos
 setTimeout(function(){
-	document.querySelector('.alerta').style.display = 'none';
+	document.querySelector('.alerta').style.display = 'none';	
+	//document.getElementById('formulario').style.display ='none';
 },3000);
 
 //Limpar dados do formulário após o envio

@@ -106,20 +106,31 @@
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md" id="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/inovaskills_logo.png" alt="Logo InovaSkills"></a>
-		</div>
-		<ul>
-			<li>
-				<a href="#formulario" onclick="abrirForm()" style="font-family:'Poppins', sans-serif; font-size:1.2rem;" id="cadastroTopo">CADASTRE-SE</a>
-			</li>
-		</ul>
-	</div>
-  </div>
-</div>
+		<div class="container-fluid">
+				<div class="row">
+					<div class="col-md" id="header">
+						<div class="logo">
+							<a href="index.html"><img src="images/inovaskills_logo.png" alt="Logo InovaSkills"></a> <br>
+						</div>
+								<nav class="menu">
+										<ul>
+												<li><a href="#">MENU</a>
+														<ul>
+															  <li><a href="index.html">Página inicial</a></li>
+																<li><a href="estrategia-omnichannel.html">Omnichannel</a></li>
+																<li><a href="transformacao-digital.html">Transformação digital</a></li>
+																<li><a href="passos-importantes-para-a-transformacao-digital.html">6 passos importantes</a></li>
+																<li><a href="como-se-destacar-no-mundo-digital.html">Como se destacar</a></li>
+																<li><a href="como-melhorar-a-performance-do-seu-e-commerce.html">Melhore seu e-commerce</a></li>
+																<li><a href="10-principais-eventos-sobre-e-commerce-2019.html">Eventos de E-commerce</a></li>
+														</ul>
+												</li>
+												<li><a href="#" onclick="abrirForm()">Cadastre - se</a></li>
+										</ul>
+								</nav>
+					</div>
+				</div>
+			</div>
 
  <div class="form" id="formulario" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
 	<div class="card formulario"> 
@@ -139,7 +150,7 @@
           <label><input id="optradio" type="radio" name="optradio" required>não</label>
         </div>
        
-      <label>Qual é a sua área de atuação</label>
+      <label>Qual é a sua área de atuação?</label>
       <div>
           <select class="form-control" id="segmento" name="segmento">
           <option value="0"></option>
@@ -166,35 +177,6 @@
     </div>
 </div>
 
-
-  
-<div class="container col-md-10">
-	<div class="row">
-		   <article class="col-md-12">
-				<h2 style="text-align:center;">Confira os 10 principais eventos em 2019 sobre e-commerce</h2>
-				
-				<div class="fakeimg" style="width:70%; margin:auto;"><img src="images/artigo6.jpg" alt="eventos ecommerce" width="100%"></div>
-			   <p style="margin-top:1%; text-indent:50px;">
-				Os principais eventos sobre e-commerce em 2019 estão chegando! Tudo a nossa volta vive esta em eterna transformação, logo,  
-				é preciso se atualizar com o intuito de saber as melhores práticas e consequentemente ganhar competitividade no mercado.
-                No mundo do e-commerce não é diferente! Saiba quais os principais eventos sobre e-commerce no Brasil e em outros países para se 
-				atualizar, fazer networking e sair na frente nos seus negócios!		   
-				</p>
-			   
-			   <h3 class="subtitulo">Vtex Day</h3>
-			   
-			   <p style="text-indent:50px;">Em 2018 Vtex Day conseguiu reunir um público de quase 15 mil pessoas sendo considerado um dos
-			   principais eventos sobre e-commerce do mundo, portando não podia ser diferente, trazendo 100 palestrantes brasileiros e 
-			   estrangeiros que discutem sobre a sustentabilidade do setor. Este ano não será diferente, serão 2 dias de eventos com 14 
-			   ambientes de treinamento e insights de pessoas renomadas como: Barack Obama, Ricardo Amorim, Angela Cearns e Steven Bartlett. <br>
-				Data: 30 e 31 de maio
-				Localização: São Paulo/SP
-				</p>
-								
-				<h3 class="subtitulo">IRCE – Internet Retailer Conference + Exhibition</h3>
-				
-			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Ver Mais</a>  
-			  
 			   <!-- Formulário do "Ver Mais" -->
 
 			 <div class="form" id="formularioVerMais" style="display:none; position:fixed; padding:0; margin:0; top:0; left:0; width: 100%; height: 100%; background:rgba(255,255,255,0.5); z-index:7;">
@@ -238,7 +220,34 @@
 														</form>
     </div>
 </div>
-
+  
+<div class="container col-md-10">
+	<div class="row">
+		   <article class="col-md-12">
+				<h2 style="text-align:center;">Confira os 10 principais eventos em 2019 sobre e-commerce:</h2>
+				
+				<div class="fakeimg" style="width:70%; margin:auto;"><img src="images/artigo6.jpg" alt="eventos ecommerce" width="100%"></div>
+			   <p style="margin-top:1%; text-indent:50px;">
+				Os principais eventos sobre e-commerce em 2019 estão chegando! Tudo a nossa volta vive esta em eterna transformação, logo,  
+				é preciso se atualizar com o intuito de saber as melhores práticas e consequentemente ganhar competitividade no mercado.
+                No mundo do e-commerce não é diferente! Saiba quais os principais eventos sobre e-commerce no Brasil e em outros países para se 
+				atualizar, fazer networking e sair na frente nos seus negócios!		   
+				</p>
+			   
+			   <h3 class="subtitulo">Vtex Day</h3>
+			   
+			   <p style="text-indent:50px;">Em 2018 Vtex Day conseguiu reunir um público de quase 15 mil pessoas sendo considerado um dos
+			   principais eventos sobre e-commerce do mundo, portando não podia ser diferente, trazendo 100 palestrantes brasileiros e 
+			   estrangeiros que discutem sobre a sustentabilidade do setor. Este ano não será diferente, serão 2 dias de eventos com 14 
+			   ambientes de treinamento e insights de pessoas renomadas como: Barack Obama, Ricardo Amorim, Angela Cearns e Steven Bartlett. <br>
+				Data: 30 e 31 de maio
+				Localização: São Paulo/SP
+				</p>
+								
+				<h3 class="subtitulo">IRCE – Internet Retailer Conference + Exhibition</h3>
+				
+			  <a href="#formularioVerMais" onclick="abrirFormVerMais()" id="bt-cadastro2">Ver Mais</a>  
+			  
 	<div style="display:none; margin-top:1%;" id="divConteudoOculto">  
 		
 				   <p style="text-indent:50px;">
@@ -326,16 +335,22 @@
 		  </div>		
 </div>		
 	
-<div class="container-fluid" id="footer" style="height:auto;>
-	<div class="container col-md-10" style="z-index:1; height:50px;">
+<div class="display container-fluid" id="footer" style="height:fit-content">
+	<div class="container col-md-10" style="z-index:1; height:auto; margin-top: 0px; position: relative" >
 	  <div class="row" id="linha-rodape">					
 			  <div class="logo-rodape">
-				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills">
-				<p style="text-align:left;">&copy; 2019 Todos os direitos reservados.</p>
-			  </div> 		
-	  </div>
-</div>
-
+			  <div style="width:100%;">	
+				<img src="images/inovaskills_logo.png" alt="Logo InovaSkills"><br>
+				<h6>para entrar em contato, entre em uma de nossas redes:</h6>
+				<a href="https://www.instagram.com/inovaskills/" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-instagram"></i>&nbsp; INSTAGRAM</a>
+		    <a href="https://www.facebook.com/inovaskills" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-facebook"></i>&nbsp; FACEBOOK</a>
+				<a href="https://www.linkedin.com/company/inova-skills/" class="card-link" style="font-size:1rem; font-family:'Poppins', sans-serif; color:#333333;"><i class="fab fa-linkedin"></i>&nbsp; LINKEDIN</a>
+				<h5><p style="text-align:center;">&copy; 2019 Todos os direitos reservados.</p></h5>	
+		</div>
+      </div>
+     </div>
+   </div>
+ </div>
 <!-- Conexão com o Firebase --> 
 <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
 <script src="js/conexaoFirebase.js"></script>
